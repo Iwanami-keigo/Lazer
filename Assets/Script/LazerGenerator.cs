@@ -13,7 +13,7 @@ public class LazerGenerator : MonoBehaviour {
 	void Update () {
 			}
 	void OnBecameInvisible(){
-		Destroy (this.gameObject);
+		gameObject.SetActive (false);
 	}
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "PlayerTag") {
@@ -21,7 +21,7 @@ public class LazerGenerator : MonoBehaviour {
 
 		}
 		if (other.gameObject.tag != "BatteryTag" && other.gameObject.tag == "BlockTag" || other.gameObject.tag == "PlayerTag") {
-			Destroy (this.gameObject);
+			gameObject.SetActive (false);
 		}  
 
 
