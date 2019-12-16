@@ -6,6 +6,7 @@ public class PlayerManeger : MonoBehaviour {
 
 	public Vector3 firstPosition;
 	private GameObject Player;
+	public GameObject Explosion;
 
 
 	// Use this for initialization
@@ -20,14 +21,20 @@ public class PlayerManeger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+		
 	}
 	void RetornPlayer(){
+		
 		Player.SetActive (true);
 		Player.transform.position = firstPosition;
 
 
 	}
 	public void InvokeRetornPlayer(){
+		GameObject Boom = Instantiate (Explosion) as GameObject;
+		Boom.transform.position = Player.transform.position;
+		Explosion.gameObject.transform.position = Player.gameObject.transform.position;
+		Boom.GetComponent<ParticleSystem> ().Play ();
 		Player.SetActive (false);
 		Invoke ("RetornPlayer", 1);
 }

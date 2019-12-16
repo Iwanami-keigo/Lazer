@@ -16,6 +16,8 @@ TagManager:
   - BatteryTag
   - GoalEnterTag
   - PlayerGoalTag
+  - LedBatteryTag
+  - BlueBatteryTag
   layers:
   - Default
   - TransparentFX
