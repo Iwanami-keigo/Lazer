@@ -35,7 +35,7 @@ public class Safetytouch : MonoBehaviour {
 	//スタートエリア内のうちだけアイテムを動かせる
 	public void Idou(){
 		GameObject Player = GameObject.Find ("Player");
-		Debug.Log ("デバッグ");
+
 		if (Player.tag == "StartPositionTag") {
 			transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (x, y, 10.0f));
 		}

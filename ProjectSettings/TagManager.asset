@@ -18,6 +18,8 @@ TagManager:
   - PlayerGoalTag
   - LedBatteryTag
   - BlueBatteryTag
+  - UpRetry
+  - DownRetry
   layers:
   - Default
   - TransparentFX
