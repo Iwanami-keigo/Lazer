@@ -14,13 +14,13 @@ public class PlayerController : MonoBehaviour {
 	float y_max = 4.9f;
 	float y_min = -4.9f;
 
-
+	private GameObject goal;
 
 
 	// Use this for initialization
 	void Start () {
 		
-
+		goal = GameObject.Find ("Goal");
 
 		
 	}
@@ -50,8 +50,10 @@ public class PlayerController : MonoBehaviour {
 		if(Input.GetKey(KeyCode.LeftArrow)){
 			transform.Translate(-this.speed,0,0);
 		}
+		if (goal.tag == "GoalEnterTag") {
+			speed = 0;
+		}
 
-			
 }
 	void OnTriggerStay2D(Collider2D other){
 		//Startエリア内に居る時は開始位置タグ

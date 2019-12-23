@@ -9,23 +9,23 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1036791795520086}
+  m_RootGameObject: {fileID: 1907957219540858}
   m_IsPrefabParent: 1
---- !u!1 &1036791795520086
+--- !u!1 &1907957219540858
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4171078856625860}
-  - component: {fileID: 212534750148760592}
-  - component: {fileID: 114323571990273896}
-  - component: {fileID: 114684537923099364}
-  - component: {fileID: 58670495078952750}
-  - component: {fileID: 114261336617342904}
-  - component: {fileID: 120928865548521696}
-  - component: {fileID: 114768502557763550}
+  - component: {fileID: 4829072639365330}
+  - component: {fileID: 212951829660984690}
+  - component: {fileID: 114964853147570200}
+  - component: {fileID: 114646377853081606}
+  - component: {fileID: 58326303049312024}
+  - component: {fileID: 114953417977875386}
+  - component: {fileID: 120757219640499682}
+  - component: {fileID: 114640881029014844}
   m_Layer: 11
   m_Name: LedLazerBattery
   m_TagString: LedBatteryTag
@@ -33,12 +33,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4171078856625860
+--- !u!4 &4829072639365330
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036791795520086}
+  m_GameObject: {fileID: 1907957219540858}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -2.64, y: 3.5, z: 0}
   m_LocalScale: {x: 0.15, y: 0.2, z: 1}
@@ -46,12 +46,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!58 &58670495078952750
+--- !u!58 &58326303049312024
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036791795520086}
+  m_GameObject: {fileID: 1907957219540858}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -61,51 +61,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.5
---- !u!114 &114261336617342904
+--- !u!114 &114640881029014844
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036791795520086}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2334f2ab5a10fc347a8bbf8ae080d5ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  z: 3
---- !u!114 &114323571990273896
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036791795520086}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ed580038789a9040922ca37ba184db7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MiniLazer: {fileID: 1895252671704932, guid: 1ad93dcb132e0ca48b362e7392e52609, type: 2}
-  Battery: {fileID: 4171078856625860}
-  speed: 5
-  timeOut: 0.03
---- !u!114 &114684537923099364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036791795520086}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 448ecb470a7ae0140a48458e64f1e3a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theTime: 3
---- !u!114 &114768502557763550
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036791795520086}
+  m_GameObject: {fileID: 1907957219540858}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b66ee6de54bb53a42bbbd83060d3a415, type: 3}
@@ -117,12 +78,51 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8704
---- !u!120 &120928865548521696
+--- !u!114 &114646377853081606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907957219540858}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448ecb470a7ae0140a48458e64f1e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theTime: 3
+--- !u!114 &114953417977875386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907957219540858}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2334f2ab5a10fc347a8bbf8ae080d5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z: 3
+--- !u!114 &114964853147570200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907957219540858}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed580038789a9040922ca37ba184db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MiniLazer: {fileID: 1895252671704932, guid: 1ad93dcb132e0ca48b362e7392e52609, type: 2}
+  Battery: {fileID: 4829072639365330}
+  speed: 5
+  timeOut: 0.03
+--- !u!120 &120757219640499682
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036791795520086}
+  m_GameObject: {fileID: 1907957219540858}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -205,12 +205,12 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!212 &212534750148760592
+--- !u!212 &212951829660984690
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1036791795520086}
+  m_GameObject: {fileID: 1907957219540858}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

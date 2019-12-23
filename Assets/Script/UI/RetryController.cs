@@ -10,38 +10,41 @@ public class RetryController : MonoBehaviour {
 	public float down;
 	public float up;
 	public float time;
-	private float PosX = -64.5f;
-	private float PosY = -63f;
+
 	private  Vector3 firstPosition;
+
 	private GameObject Player;
+	private GameObject Goal;
 	private GameObject SafetyTouch;
 
 	private bool retryButtonDown = false;
 	// Use this for initialization
 	void Start () {
+		Goal = GameObject.Find ("Goal");
 		Player = GameObject.Find ("Player");
 		SafetyTouch = GameObject.Find ("Safetytouch");
+	
 
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (!SafetyTouch.activeSelf) {
+		if (!SafetyTouch.activeSelf ) {
 			Upmove ();
-		} else {
+		} else if(Goal.tag != "GoalEnterTag"){
 			Downmove ();
 		}
 		if (retryButtonDown == true) {
 			Debug.Log ("リセット");
-			SceneManager.LoadScene ("Gamescene");
+			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 		}
 	}
 	void Downmove(){
-		tweener = this.transform.DOLocalMoveY (down, time).SetEase (Ease.OutExpo);
+		tweener = this.transform.DOLocalMoveX (down, time).SetEase (Ease.OutExpo);
 	}
 	void Upmove(){
-		tweener = this.transform.DOLocalMoveY ( up, time).SetEase (Ease.OutExpo);
+		tweener = this.transform.DOLocalMoveX ( up, time).SetEase (Ease.OutExpo);
 	}
 	public void GetRetryButtonDown(){
 		this.retryButtonDown = true;

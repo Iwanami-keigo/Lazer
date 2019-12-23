@@ -8,24 +8,36 @@ public class GoalController : MonoBehaviour {
 	private bool isEnd = false;
 	private GameObject GoalText;
 	private ParticleSystem Pt;
+	public GameObject panel;
 
 
 
 	// Use this for initialization
 	void Start () {
 		this.GoalText = GameObject.Find ("GoalResult");
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (this.gameObject.tag == "GoalEnterTag") {
+			Ptattack ();
+		}
 		
 	}
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "PlayerTag") {
+			panel.SetActive (true);
 			this.gameObject.tag = "GoalEnterTag";
 			isEnd = true;
 			this.GoalText.GetComponent<Text> ().text = "CLEAR!!";
-		  GetComponent<ParticleSystem> ().Play ();
+			GetComponent<ParticleSystem> ().Play ();
+
+
 		}
 	}
+	void Ptattack(){
+		
+	}
+
 }

@@ -20,6 +20,11 @@ TagManager:
   - BlueBatteryTag
   - UpRetry
   - DownRetry
+  - BlocktouchNow
+  - BlocktouchAgo
+  - BackButton
+  - NextButton
+  - Buttonnull
   layers:
   - Default
   - TransparentFX

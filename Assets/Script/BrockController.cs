@@ -13,7 +13,7 @@ public class BrockController : MonoBehaviour {
 	float y_min = -4.9f;
 	private GameObject Player;
 	private GameObject BlockTouch;
-
+	public float z;
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +30,11 @@ public class BrockController : MonoBehaviour {
 
 		x = Input.mousePosition.x;
 		y = Input.mousePosition.y;
+
+		if (Input.GetKey (KeyCode.Space) && BlockTouch.tag == "BlocktouchNow") {
+			this.transform.Rotate (0, 0, z);
+		}
+			
 		if (Player.gameObject.tag == "InvincibleTag" || Player.tag == "StartPositionTag") {
 			Retorntouch ();
 

@@ -11,7 +11,7 @@ public class PlayerManeger : MonoBehaviour {
 	//爆発プレハブを入れるリスト
 	private List<GameObject>boomPool = new List<GameObject>();
 	//プーリングする数
-	private int boomnum = 2;
+	private int boomnum = 1;
 
 
 	// Use this for initialization
