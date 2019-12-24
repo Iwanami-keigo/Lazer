@@ -8,10 +8,15 @@ public class PlayerManeger : MonoBehaviour {
 	private GameObject Player;
 	//爆発演出のプレハブ
 	public GameObject Explosion;
+	//リスポーン演出〃
+	public GameObject resporn;
 	//爆発プレハブを入れるリスト
 	private List<GameObject>boomPool = new List<GameObject>();
+	//リスポーンプレハブ〃
+	private List<GameObject>respool = new List<GameObject>();
 	//プーリングする数
 	private int boomnum = 1;
+	private int resnum = 1;
 
 
 	// Use this for initialization
@@ -27,7 +32,12 @@ public class PlayerManeger : MonoBehaviour {
 			bom.SetActive (false);
 			boomPool.Add (bom);
 		}
-		
+		GameObject res;
+		for (int i = 0; i < resnum; i++) {
+			res = GameObject.Instantiate (resporn);
+			res.SetActive (false);
+			respool.Add (res);
+		}
 	}
 	
 	// Update is called once per frame
@@ -59,6 +69,18 @@ public class PlayerManeger : MonoBehaviour {
 
 
 		Player.SetActive (false);
-		Invoke ("RetornPlayer", 1);
+		Invoke ("RespornEffect", 0.5f);
+		Invoke ("RetornPlayer", 1.8f);
 }
+	void RespornEffect(){
+		bool isres = false;
+		for (int i = 0; i < respool.Count; i++) {
+			if (!respool [i].activeSelf) {
+				respool [i].transform.position = firstPosition;
+				respool [i].SetActive (true);
+				isres = true;
+				break;
+			}
+		}
+	}
 }

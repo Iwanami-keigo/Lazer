@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4829072639365330}
   - component: {fileID: 212951829660984690}
-  - component: {fileID: 114964853147570200}
   - component: {fileID: 114646377853081606}
   - component: {fileID: 58326303049312024}
   - component: {fileID: 114953417977875386}
@@ -102,21 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   z: 3
---- !u!114 &114964853147570200
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1907957219540858}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ed580038789a9040922ca37ba184db7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MiniLazer: {fileID: 1895252671704932, guid: 1ad93dcb132e0ca48b362e7392e52609, type: 2}
-  Battery: {fileID: 4829072639365330}
-  speed: 5
-  timeOut: 0.03
 --- !u!120 &120757219640499682
 LineRenderer:
   m_ObjectHideFlags: 1

@@ -52,4 +52,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstPosition: {x: 0, y: 0, z: 0}
-  Explosion: {fileID: 1978721657800134, guid: 7a36a8241f92db64ba581122699a0564, type: 2}
+  Explosion: {fileID: 1978721657800134, guid: fad4c8fae9760994389ef10094891090, type: 2}
+  resporn: {fileID: 1746818206065040, guid: d82b70e22c13c6e4e84e1868145fcb53, type: 2}
