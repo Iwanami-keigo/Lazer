@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour {
 	private float speed = 0.07f;
 
 	//動ける範囲のｘとｙ
-	float x_max = 8.4f;
-	float x_min = -8.4f;
+	float x_max = 8f;
+	float x_min = -8f;
 	float y_max = 4.9f;
 	float y_min = -4.9f;
 
