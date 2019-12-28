@@ -30,6 +30,9 @@ public class BrockController : MonoBehaviour {
 
 		x = Input.mousePosition.x;
 		y = Input.mousePosition.y;
+		if (!BlockTouch.activeSelf) {
+			BlockTouch.tag = "BlocktouchAgo";
+		}
 
 		if (Input.GetKey (KeyCode.Space) && BlockTouch.tag == "BlocktouchNow") {
 			this.transform.Rotate (0, 0, z);

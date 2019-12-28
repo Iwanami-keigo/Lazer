@@ -58,8 +58,11 @@ public class Blocktouch : MonoBehaviour {
 		this.gameObject.tag = "BlocktouchAgo";
 	}
 	public void tagchange(){
+		GameObject Player = GameObject.Find ("Player");
+		if(Player.tag != "PlayerTag"){
 		this.gameObject.tag = "BlocktouchNow";
 	}
+}
 }
 
 

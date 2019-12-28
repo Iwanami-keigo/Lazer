@@ -16,15 +16,18 @@ public class RetryController : MonoBehaviour {
 	private GameObject Player;
 	private GameObject Goal;
 	private GameObject SafetyTouch;
+	public GameObject homePanel;
 
 	private bool retryButtonDown = false;
 	private bool retryhome = false;
+
+	private bool backhome = false;
 	// Use this for initialization
 	void Start () {
 		Goal = GameObject.Find ("Goal");
 		Player = GameObject.Find ("Player");
 		SafetyTouch = GameObject.Find ("Safetytouch");
-	
+
 
 
 	}
@@ -37,7 +40,6 @@ public class RetryController : MonoBehaviour {
 			Downmove ();
 		}
 
-
 	}
 	void Downmove(){
 		tweener = this.transform.DOLocalMoveX (down, time).SetEase (Ease.OutExpo);
@@ -46,8 +48,7 @@ public class RetryController : MonoBehaviour {
 		tweener = this.transform.DOLocalMoveX ( up, time).SetEase (Ease.OutExpo);
 	}
 	public void ReturnMenu(){
-		Debug.Log ("retry");
-		SceneManager.LoadScene ("Menu");
+		homePanel.SetActive (true);
 	}
 	public void GetRetryButtonDown(){
 		Debug.Log ("Get");

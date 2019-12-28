@@ -18,13 +18,17 @@ public class ButtonMove : MonoBehaviour {
 	private bool die = false;
 	private bool push = false;
 
+	float red,green,blue,alfa;
+
 	public GameObject back;
 	public GameObject next;
+
+	Color color;
 
 	// Use this for initialization
 	void Start () {
 		goal = GameObject.Find ("Goal");
-		
+
 	}
 	
 	// Update is called once per frame
@@ -51,6 +55,7 @@ public class ButtonMove : MonoBehaviour {
 	}
 	void Stagechange(){
 		if (back.tag == "Buttonnull") {
+			
 			SceneManager.LoadScene ("Menu");
 		}
 		if (next.tag == "Buttonnull") {
