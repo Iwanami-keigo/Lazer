@@ -34,9 +34,9 @@ public class RetryController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!SafetyTouch.activeSelf ) {
+		if (Player.tag != "StartPositionTag" ) {
 			Upmove ();
-		} else if(Goal.tag != "GoalEnterTag"){
+		} else{
 			Downmove ();
 		}
 

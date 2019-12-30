@@ -23,13 +23,7 @@ public class BrockController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Vector3 MGpo = transform.position;
-		MGpo.x = Mathf.Clamp (transform.position.x, x_min, x_max);
-		MGpo.y = Mathf.Clamp (transform.position.y, y_min, y_max);
-		transform.position = new Vector3 (MGpo.x, MGpo.y, transform.position.z);
 
-		x = Input.mousePosition.x;
-		y = Input.mousePosition.y;
 		if (!BlockTouch.activeSelf) {
 			BlockTouch.tag = "BlocktouchAgo";
 		}

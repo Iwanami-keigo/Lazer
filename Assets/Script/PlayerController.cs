@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -15,13 +16,13 @@ public class PlayerController : MonoBehaviour {
 	float y_min = -4.9f;
 
 	private GameObject goal;
-
+	private GameObject stick;
 
 	// Use this for initialization
 	void Start () {
 		
 		goal = GameObject.Find ("Goal");
-
+		stick = GameObject.Find ("Stick");
 		
 	}
 	
@@ -34,8 +35,11 @@ public class PlayerController : MonoBehaviour {
 		PlayerPosition.y = Mathf.Clamp (transform.position.y, y_min, y_max);
 		transform.position = new Vector3 (PlayerPosition.x, PlayerPosition.y, transform.position.z);
 
-		//上に移動
-		if(Input.GetKey(KeyCode.UpArrow)){
+
+		PlayerPosition.x += stick.transform.position.x * speed;
+		PlayerPosition.z += stick.transform.position.z * speed;
+			//上に移動
+		if(Input.GetKey(KeyCode.UpArrow) ){
 			transform.Translate(0,this.speed,0);
 		}
 		//下に移動

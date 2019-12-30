@@ -1,0 +1,40 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+public class StickPlayerMove : MonoBehaviour {
+	private GameObject player;
+	//移動速度
+	public float attach;
+	private float speed = 0.07f;
+	private RectTransform recttrans;
+	private GameObject goal;
+	// Use this for initialization
+	void Start () {
+		player = GameObject.Find ("Player");
+		goal = GameObject.Find ("Goal");
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		Vector2 pos = GetComponent<RectTransform> ().anchoredPosition;
+		if (pos.x >= 25f) {
+			player.transform.Translate (this.speed, 0, 0);
+		}	
+		if(pos.x <= -25f){
+			player.transform.Translate (-this.speed, 0, 0);
+		
+	}
+		if(pos.y >= 25f){
+			player.transform.Translate (0, this.speed, 0);
+		}
+		if(pos.y <= -25f){
+			player.transform.Translate (0, -this.speed, 0);
+		}
+		if (goal.tag == "GoalEnterTag") {
+			speed = 0;
+		}
+
+}
+}
+

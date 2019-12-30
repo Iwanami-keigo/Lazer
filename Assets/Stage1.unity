@@ -231,12 +231,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1234f56dac91444ea2b2d9f5bc2f888, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &421331758 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114941436528024160, guid: 172741de9ab88534b8036e972d8f5066,
-    type: 2}
-  m_PrefabInternal: {fileID: 740265030}
-  m_Script: {fileID: 11500000, guid: 11390a409df85c84f96f0ef477ceee91, type: 3}
 --- !u!1 &721668392
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,41 +389,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114637272067933878, guid: 172741de9ab88534b8036e972d8f5066,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 421331758}
-    - target: {fileID: 114637272067933878, guid: 172741de9ab88534b8036e972d8f5066,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReturnMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 114843333583801332, guid: 172741de9ab88534b8036e972d8f5066,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReturnMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 114305877646743768, guid: 172741de9ab88534b8036e972d8f5066,
-        type: 2}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
-    - target: {fileID: 224661485789930342, guid: 172741de9ab88534b8036e972d8f5066,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224760142138969768, guid: 172741de9ab88534b8036e972d8f5066,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224814951569827432, guid: 172741de9ab88534b8036e972d8f5066,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 172741de9ab88534b8036e972d8f5066, type: 2}
