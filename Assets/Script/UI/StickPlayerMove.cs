@@ -9,6 +9,8 @@ public class StickPlayerMove : MonoBehaviour {
 	private float speed = 0.07f;
 	private RectTransform recttrans;
 	private GameObject goal;
+
+	bool cAtch = false;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Player");
@@ -18,17 +20,23 @@ public class StickPlayerMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector2 pos = GetComponent<RectTransform> ().anchoredPosition;
-		if (pos.x >= 25f) {
+		if (Input.GetMouseButton(0)) {
+			cAtch = true;
+		} else {
+			cAtch = false;
+		}
+
+		if (pos.x >= 25f && cAtch == true) {
 			player.transform.Translate (this.speed, 0, 0);
 		}	
-		if(pos.x <= -25f){
+		if(pos.x <= -25f&& cAtch == true ){
 			player.transform.Translate (-this.speed, 0, 0);
 		
 	}
-		if(pos.y >= 25f){
+		if(pos.y >= 25f&& cAtch == true ){
 			player.transform.Translate (0, this.speed, 0);
 		}
-		if(pos.y <= -25f){
+		if(pos.y <= -25f&& cAtch == true ){
 			player.transform.Translate (0, -this.speed, 0);
 		}
 		if (goal.tag == "GoalEnterTag") {
@@ -36,5 +44,6 @@ public class StickPlayerMove : MonoBehaviour {
 		}
 
 }
+
 }
 

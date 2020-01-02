@@ -17,12 +17,14 @@ public class PlayerController : MonoBehaviour {
 
 	private GameObject goal;
 	private GameObject stick;
+	public GameObject homePanel;
 
 	// Use this for initialization
 	void Start () {
 		
 		goal = GameObject.Find ("Goal");
 		stick = GameObject.Find ("Stick");
+
 		
 	}
 	
@@ -38,24 +40,26 @@ public class PlayerController : MonoBehaviour {
 
 		PlayerPosition.x += stick.transform.position.x * speed;
 		PlayerPosition.z += stick.transform.position.z * speed;
+		if (!homePanel.activeSelf) {
 			//上に移動
-		if(Input.GetKey(KeyCode.UpArrow) ){
-			transform.Translate(0,this.speed,0);
-		}
-		//下に移動
-	 if(Input.GetKey(KeyCode.DownArrow)){
-			transform.Translate(0,-this.speed,0);
-		}
-		//右に移動
-	if(Input.GetKey(KeyCode.RightArrow)){
-			transform.Translate(this.speed,0,0);
-		}
-		//左に移動
-		if(Input.GetKey(KeyCode.LeftArrow)){
-			transform.Translate(-this.speed,0,0);
-		}
-		if (goal.tag == "GoalEnterTag") {
-			speed = 0;
+			if (Input.GetKey (KeyCode.UpArrow)) {
+				transform.Translate (0, this.speed, 0);
+			}
+			//下に移動
+			if (Input.GetKey (KeyCode.DownArrow)) {
+				transform.Translate (0, -this.speed, 0);
+			}
+			//右に移動
+			if (Input.GetKey (KeyCode.RightArrow)) {
+				transform.Translate (this.speed, 0, 0);
+			}
+			//左に移動
+			if (Input.GetKey (KeyCode.LeftArrow)) {
+				transform.Translate (-this.speed, 0, 0);
+			}
+			if (goal.tag == "GoalEnterTag") {
+				speed = 0;
+			}
 		}
 
 }

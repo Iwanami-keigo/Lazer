@@ -255,8 +255,9 @@ GameObject:
   - component: {fileID: 491659498}
   - component: {fileID: 491659497}
   - component: {fileID: 491659496}
+  - component: {fileID: 491659499}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,6 +356,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 491659494}
+--- !u!114 &491659499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491659494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e805f1965825f4282d11f8257338fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 0.02
 --- !u!1001 &571671240
 Prefab:
   m_ObjectHideFlags: 0
@@ -467,7 +480,7 @@ GameObject:
   - component: {fileID: 937056722}
   - component: {fileID: 937056721}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PLAY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +653,7 @@ GameObject:
   - component: {fileID: 1495515651}
   - component: {fileID: 1495515650}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Lazer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

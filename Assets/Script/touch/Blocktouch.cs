@@ -12,6 +12,7 @@ public class Blocktouch : MonoBehaviour {
 	float y_max = 4.9f;
 	float y_min = -4.9f;
 	private GameObject Block;
+	public GameObject blockguide;
 
 
 	// Use this for initialization
@@ -22,7 +23,8 @@ public class Blocktouch : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+
+
 		Vector3 MGpo = transform.position;
 		MGpo.x = Mathf.Clamp (transform.position.x, x_min, x_max);
 		MGpo.y = Mathf.Clamp (transform.position.y, y_min, y_max);
@@ -37,6 +39,19 @@ public class Blocktouch : MonoBehaviour {
 		if (Input.GetMouseButtonUp (0)) {
 			this.gameObject.tag = "BlocktouchAgo";
 		}
+		if (Input.touchCount == 2) {
+			for (int i = 0; i < Input.touchCount; i++) {
+				Touch touch = Input.GetTouch (i);
+				if (tag =="BlocktouchNow"&& touch.phase == TouchPhase.Stationary  ) {
+					Block.transform.Rotate (0, 0, 4);
+				}
+			}
+		}
+		if (tag == "BlocktouchNow") {
+			blockguide.SetActive (true);
+		} else {
+			blockguide.SetActive (false);
+		}
 	}
 	//無敵のうちだけアイテムを動かせる
 	public void Idou(){
@@ -47,13 +62,15 @@ public class Blocktouch : MonoBehaviour {
 			
 			}
 		}
-
-
-
+		if (Input.touchCount == 1) {
+			for (int i = 0; i < Input.touchCount; i++) {
+				Touch touch = Input.GetTouch (i);
+				if (Player.tag == "InvincibleTag" || Player.tag == "StartPositionTag") {
+					transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (x, y, 10.0f));
+				}
+	}
 		}
-
-
-
+	}
 	public void drop(){
 		this.gameObject.tag = "BlocktouchAgo";
 	}
