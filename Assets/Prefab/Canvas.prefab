@@ -610,10 +610,11 @@ MonoBehaviour:
   x: 0
   rX: -740
   lag: 2
-  time: 0.8
-  time2: 0.8
+  time: 1
+  time2: 1.1
   back: {fileID: 1354115426729674}
   next: {fileID: 1500939876121594}
+  speed: 0.02
 --- !u!114 &114172752882252804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -869,10 +870,11 @@ MonoBehaviour:
   x: 0
   rX: 740
   lag: 2
-  time: 0.8
-  time2: 0.8
+  time: 1
+  time2: 1.1
   back: {fileID: 1354115426729674}
   next: {fileID: 1500939876121594}
+  speed: 0.02
 --- !u!114 &114397889613340672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1146,7 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   y: -360
-  time: 2.5
+  time: 2
   firstPosition: {x: 0, y: 8, z: 0}
   speed: 0.02
 --- !u!114 &114637272067933878
