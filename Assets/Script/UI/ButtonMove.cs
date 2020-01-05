@@ -28,6 +28,10 @@ public class ButtonMove : MonoBehaviour {
 	float backred,backgreen,backblue,nextred,nextgreen,nextblue;
 	private float backalfa,nextalfa,backalfa2,nextalfa2;
 	float backred2,backgreen2,backblue2,nextred2,nextgreen2,nextblue2;
+
+	private AudioSource audiosource;
+	public AudioClip backse;
+	public AudioClip nextse;
 	// Use this for initialization
 	void Start () {
 		goal = GameObject.Find ("Goal");
@@ -53,6 +57,8 @@ public class ButtonMove : MonoBehaviour {
 		nextgreen2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.g;
 		nextblue2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.b;
 		nextalfa2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.a;
+
+		audiosource = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -74,10 +80,12 @@ public class ButtonMove : MonoBehaviour {
 			GetComponent<RectTransform> ().DOAnchorPosX (x, time).SetEase (Ease.OutBack).SetDelay (lag);
 		}
 		if (back.tag == "Buttonnull") {
+			
 			nextalfa -= speed;
 			nextalfa2 -= speed;
 		}
 		if (next.tag == "Buttonnull") {
+			
 			backalfa -= speed;
 			backalfa2 -= speed;
 		}
@@ -102,4 +110,13 @@ public class ButtonMove : MonoBehaviour {
 			SceneManager.LoadScene ("Stage1");
 		}
 	}
+
+	public void Bseflag(){
+		audiosource.PlayOneShot (backse);
+	}
+	public void Nseflag(){
+		audiosource.PlayOneShot (nextse);
+	}
+
+		
 }

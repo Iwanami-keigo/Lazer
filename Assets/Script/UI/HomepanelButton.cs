@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class HomepanelButton : MonoBehaviour {
 	public GameObject Homepanel;
-
+	public GameObject panel;
+	public AudioClip menuback;
+	private AudioSource audiosource;
 	// Use this for initialization
 	void Start () {
-
+		audiosource = GetComponent<AudioSource> ();
 		
 	}
 	
@@ -19,9 +21,15 @@ public class HomepanelButton : MonoBehaviour {
 		
 	}
 	public void BackHome(){
-		SceneManager.LoadScene ("Menu");
+		tag = "Buttonnull";
+		panel.SetActive (true);
+		audiosource.PlayOneShot (menuback);
+		Invoke ("MenuLoad", 2.5f);
 	}
 	public void Keepon(){
 		Homepanel.SetActive (false);
+	}
+	private void MenuLoad(){
+		SceneManager.LoadScene ("Menu");
 	}
 }
