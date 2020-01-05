@@ -18,18 +18,21 @@ public class RetryController : MonoBehaviour {
 	private GameObject SafetyTouch;
 	public GameObject homePanel;
 
+
 	private bool retryButtonDown = false;
 	private bool retryhome = false;
 
 	private bool backhome = false;
+	public AudioClip pausesound;
+	private AudioSource audiosouce;
+
 	// Use this for initialization
 	void Start () {
 		Goal = GameObject.Find ("Goal");
 		Player = GameObject.Find ("Player");
 		SafetyTouch = GameObject.Find ("Safetytouch");
-
-
-
+		audiosouce = GetComponent<AudioSource> ();
+	
 	}
 	
 	// Update is called once per frame
@@ -49,6 +52,7 @@ public class RetryController : MonoBehaviour {
 	}
 	public void ReturnMenu(){
 		homePanel.SetActive (true);
+		audiosouce.PlayOneShot (pausesound);
 	}
 	public void GetRetryButtonDown(){
 		Debug.Log ("Get");

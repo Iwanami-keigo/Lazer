@@ -18,6 +18,11 @@ public class PlayerManeger : MonoBehaviour {
 	private int boomnum = 1;
 	private int resnum = 1;
 
+	public AudioClip explsound;
+	public AudioClip respsound;
+
+	AudioSource audiosource;
+
 
 	// Use this for initialization
 	void Start () {
@@ -38,6 +43,8 @@ public class PlayerManeger : MonoBehaviour {
 			res.SetActive (false);
 			respool.Add (res);
 		}
+
+		audiosource = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -50,7 +57,7 @@ public class PlayerManeger : MonoBehaviour {
 		Player.SetActive (true);
 		Player.gameObject.tag = "StartPositionTag";
 		Player.transform.position = firstPosition;
-
+		audiosource.PlayOneShot (respsound);
 
 
 	}
@@ -67,7 +74,7 @@ public class PlayerManeger : MonoBehaviour {
 			}
 		}
 
-
+		audiosource.PlayOneShot (explsound);
 		Player.SetActive (false);
 		Invoke ("RespornEffect", 0.5f);
 		Invoke ("RetornPlayer", 1.8f);

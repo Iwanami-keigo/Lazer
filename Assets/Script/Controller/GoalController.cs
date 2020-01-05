@@ -10,11 +10,13 @@ public class GoalController : MonoBehaviour {
 	private ParticleSystem Pt;
 	public GameObject panel;
 
-
+	AudioSource audiosource;
+	public AudioClip goalse;
 
 	// Use this for initialization
 	void Start () {
 		this.GoalText = GameObject.Find ("GoalResult");
+		audiosource = GetComponent<AudioSource> ();
 
 	}
 	
@@ -32,6 +34,7 @@ public class GoalController : MonoBehaviour {
 			isEnd = true;
 			this.GoalText.GetComponent<Text> ().text = "CLEAR!!";
 			GetComponent<ParticleSystem> ().Play ();
+			audiosource.PlayOneShot (goalse);
 
 
 		}

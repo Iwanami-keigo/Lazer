@@ -32,7 +32,7 @@ public class MenuPlay : MonoBehaviour {
 
 
 		nexttime = Time.time;
-		panel = GameObject.Find ("Panel");
+		panel = GameObject.Find ("StartPanel");
 	}
 	
 	// Update is called once per frame
