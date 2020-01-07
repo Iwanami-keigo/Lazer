@@ -28,7 +28,7 @@ public class GoalController : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.tag == "PlayerTag") {
+		if (other.gameObject.tag == "PlayerTag" || other.gameObject.tag == "InvincibleTag") {
 			panel.SetActive (true);
 			this.gameObject.tag = "GoalEnterTag";
 			isEnd = true;

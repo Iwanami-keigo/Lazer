@@ -13,11 +13,13 @@ public class Safetytouch : MonoBehaviour {
 	float y_min = -4.9f;
 	private GameObject Safety;
 
+	private AudioSource audiosource;
+	public AudioClip touchse;
 
 	// Use this for initialization
 	void Start () {
 		Safety = GameObject.Find ("SafetyArea");
-
+		audiosource = GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
@@ -39,5 +41,8 @@ public class Safetytouch : MonoBehaviour {
 		if (Player.tag == "StartPositionTag") {
 			transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (x, y, 10.0f));
 		}
+	}
+	public void SE(){
+		audiosource.PlayOneShot (touchse);
 	}
 }

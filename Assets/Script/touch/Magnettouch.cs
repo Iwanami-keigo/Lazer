@@ -13,11 +13,13 @@ public class Magnettouch : MonoBehaviour {
 	float y_min = -4.9f;
 	private GameObject Magnet;
 
+	private AudioSource audiosource;
+	public AudioClip touchse;
 
 	// Use this for initialization
 	void Start () {
 		Magnet = GameObject.Find ("Magnet");
-
+		audiosource = GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
@@ -41,5 +43,8 @@ public class Magnettouch : MonoBehaviour {
 			transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (x, y, 10.0f));
 		}
 
+	}
+	public void SE(){
+		audiosource.PlayOneShot (touchse);
 	}
 }

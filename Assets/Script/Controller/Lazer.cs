@@ -14,14 +14,16 @@ public class Lazer : MonoBehaviour {
 	private LineRenderer line;
 	private bool key = true;
 
+	private GameObject player;
 	// Use this for initialization
 	void Start () {
-		
+		player = GameObject.Find ("Player");
 		line = GetComponent<LineRenderer> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (Input.anyKey) {
 			key = false;
 			Debug.Log (key);
@@ -76,7 +78,10 @@ public class Lazer : MonoBehaviour {
 				line.SetPosition (1,startPosition + (direction * distance));
 			}
 		}
-			
-			
+		if (player.tag == "PlayerTag") {
+			gameObject.GetComponent<CircleCollider2D> ().isTrigger = false;
+		} else {
+			gameObject.GetComponent<CircleCollider2D> ().isTrigger = true;
+		}
 	}
 	}

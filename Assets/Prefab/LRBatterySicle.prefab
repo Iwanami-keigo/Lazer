@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212011680008473824}
   - component: {fileID: 114922857962628868}
   - component: {fileID: 58329239858095398}
+  - component: {fileID: 114305475762999100}
   m_Layer: 0
   m_Name: LRBatterySicle
   m_TagString: Untagged
@@ -120,7 +121,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066326719970800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23836017, y: -2.1943407, z: 0}
+  m_LocalPosition: {x: -3.45, y: -2.1943407, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4985841634110186}
@@ -198,6 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448ecb470a7ae0140a48458e64f1e3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Zrote: 360
   theTime: 3
 --- !u!114 &114259765603679286
 MonoBehaviour:
@@ -211,6 +213,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   z: 3
+--- !u!114 &114305475762999100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066326719970800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c94f6303a3a5e41a3d07652d9998b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114340523738944306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,6 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448ecb470a7ae0140a48458e64f1e3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Zrote: 360
   theTime: 6
 --- !u!114 &114922857962628868
 MonoBehaviour:
@@ -280,7 +294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448ecb470a7ae0140a48458e64f1e3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theTime: 20
+  Zrote: -360
+  theTime: 7
 --- !u!120 &120426495575568316
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -490,7 +505,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f4da451495d44624bb1aa1e32630107b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -578,7 +593,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4b788e93752d6cf4a9a5939607d65a12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

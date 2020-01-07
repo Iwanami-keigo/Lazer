@@ -15,10 +15,13 @@ public class BrockController : MonoBehaviour {
 	private GameObject BlockTouch;
 	public float z;
 
+
+
 	// Use this for initialization
 	void Start () {
 		Player = GameObject.Find ("Player");
 		BlockTouch = GameObject.Find ("Blocktouch");
+
 	}
 
 	// Update is called once per frame
@@ -38,6 +41,11 @@ public class BrockController : MonoBehaviour {
 		}
 		if (Player.gameObject.tag == "PlayerTag") {
 			Dietouch ();
+		}
+		if (Player.tag == "PlayerTag") {
+			gameObject.GetComponent<BoxCollider2D> ().isTrigger = false;
+		} else {
+			gameObject.GetComponent<BoxCollider2D> ().isTrigger = true;
 		}
 	}
 	//無敵のうちだけアイテムを動かせる

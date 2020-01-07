@@ -14,10 +14,13 @@ public class Blocktouch : MonoBehaviour {
 	private GameObject Block;
 	public GameObject blockguide;
 
+	private AudioSource audiosource;
+	public AudioClip touchse;
 
 	// Use this for initialization
 	void Start () {
 		Block = GameObject.Find ("Block");
+		audiosource = GetComponent<AudioSource> ();
 
 	}
 
@@ -39,10 +42,11 @@ public class Blocktouch : MonoBehaviour {
 		if (Input.GetMouseButtonUp (0)) {
 			this.gameObject.tag = "BlocktouchAgo";
 		}
-		if (Input.touchCount == 2) {
-			for (int i = 0; i < Input.touchCount; i++) {
-				Touch touch = Input.GetTouch (i);
-				if (tag =="BlocktouchNow"&& touch.phase == TouchPhase.Stationary  ) {
+
+		if (Input.touchCount > 0 && tag == "BlocktouchNow") {
+			Touch[] myTouches = Input.touches;
+			for (int i = 1; i < myTouches.Length; i++) {
+				if (i == 1) {
 					Block.transform.Rotate (0, 0, 4);
 				}
 			}
@@ -54,6 +58,7 @@ public class Blocktouch : MonoBehaviour {
 		}
 	}
 	//無敵のうちだけアイテムを動かせる
+	//イベントトリガー：ドラッグ
 	public void Idou(){
 		GameObject Player = GameObject.Find ("Player");
 		if (Input.GetMouseButton (0)) {
@@ -62,16 +67,19 @@ public class Blocktouch : MonoBehaviour {
 
 			}
 		}
-		if (Input.touchCount == 1) {
-			for (int i = 0; i < Input.touchCount; i++) {
-				Touch touch = Input.GetTouch (i);
-				if (Player.tag == "InvincibleTag" || Player.tag == "StartPositionTag") {
+		if (Input.touchCount > 0) {
+			Touch[] myTouches = Input.touches;
+		
+			for (int i = 0; i < myTouches.Length; i++) {
+				if (i == 0) {
 					transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (x, y, 10.0f));
 				}
 			}
+
+		}
 		}
 
-	}
+
 	public void drop(){
 		this.gameObject.tag = "BlocktouchAgo";
 	}
@@ -82,6 +90,9 @@ public class Blocktouch : MonoBehaviour {
 	
 	}
 }
+	public void SE(){
+		audiosource.PlayOneShot (touchse);
+	}
 }
 
 

@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class TweenSpin : MonoBehaviour {
 
-	private float Zrote = 360f;
+	public float Zrote ;
 	public float theTime;
 	Tweener tweener;
 	// Use this for initialization

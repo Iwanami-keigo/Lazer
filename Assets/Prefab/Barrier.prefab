@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212593794485227856}
   - component: {fileID: 61251906746869792}
   - component: {fileID: 114230972153904196}
+  - component: {fileID: 114062231270733300}
   m_Layer: 13
   m_Name: Barrier
   m_TagString: Untagged
@@ -67,6 +68,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114062231270733300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1731766497589606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780091dec78de934db81219d54eae99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114230972153904196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -78,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448ecb470a7ae0140a48458e64f1e3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Zrote: 360
   theTime: 10
 --- !u!212 &212593794485227856
 SpriteRenderer:
@@ -112,7 +125,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 4b788e93752d6cf4a9a5939607d65a12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
