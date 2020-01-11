@@ -15,14 +15,19 @@ public class Lazer : MonoBehaviour {
 	private bool key = true;
 
 	private GameObject player;
+
+	private PlayerController playercontroller;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Player");
 		line = GetComponent<LineRenderer> ();
+		playercontroller = player.GetComponent<PlayerController> ();
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
+
 
 		if (Input.anyKey) {
 			key = false;
@@ -54,7 +59,7 @@ public class Lazer : MonoBehaviour {
 		}
 		if(this.gameObject.tag =="LedBatteryTag"){
 				if (hitInfo.collider != null) {
-					if (hitInfo.collider.tag == "PlayerTag"   && key == false) {
+				if (hitInfo.collider.tag == "PlayerTag"   && playercontroller.ismove == true) {
 						GameObject.Find ("PlayerManeger").GetComponent<PlayerManeger> ().InvokeRetornPlayer ();
 
 					}
@@ -67,7 +72,7 @@ public class Lazer : MonoBehaviour {
 			}
 		if(this.gameObject.tag =="BlueBatteryTag"){
 			if (hitInfo.collider != null) {
-				if (hitInfo.collider.tag == "PlayerTag"   && key == true) {
+				if (hitInfo.collider.tag == "PlayerTag"   && playercontroller.ismove == false) {
 					GameObject.Find ("PlayerManeger").GetComponent<PlayerManeger> ().InvokeRetornPlayer ();
 
 				}

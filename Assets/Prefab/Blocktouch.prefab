@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2353f599deaa3498cc110260707832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockguide: {fileID: 0}
+  blockguide: {fileID: 1558318253810112, guid: 3c89af8e66d9ebd4ebe275a579593630, type: 2}
   touchse: {fileID: 8300000, guid: 8be73404ced129e4898a6acce704c97f, type: 3}
 --- !u!212 &212810195237426156
 SpriteRenderer:

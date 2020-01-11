@@ -107,7 +107,25 @@ public class ButtonMove : MonoBehaviour {
 			SceneManager.LoadScene ("Menu");
 		}
 		if (next.tag == "Buttonnull") {
-			SceneManager.LoadScene ("Stage1");
+			if (SceneManager.GetActiveScene ().name == "Gamescene") {
+				SceneManager.LoadScene ("Stage1");
+			} else if (SceneManager.GetActiveScene ().name == "Stage1") {
+				SceneManager.LoadScene ("Stage2");
+			} else if (SceneManager.GetActiveScene ().name == "Stage2") {
+				SceneManager.LoadScene ("Stage3");
+			}else if (SceneManager.GetActiveScene ().name == "Stage3") {
+				SceneManager.LoadScene ("Stage4");
+			}else if (SceneManager.GetActiveScene ().name == "Stage4") {
+				SceneManager.LoadScene ("Stage5");
+			}else if (SceneManager.GetActiveScene ().name == "Stage5") {
+				SceneManager.LoadScene ("Stage6");
+			}else if (SceneManager.GetActiveScene ().name == "Stage6") {
+				SceneManager.LoadScene ("Stage7");
+			}else if (SceneManager.GetActiveScene ().name == "Stage7") {
+				SceneManager.LoadScene ("Stage8");
+			}else if (SceneManager.GetActiveScene ().name == "Stage8") {
+				SceneManager.LoadScene ("Stage9");
+			}
 		}
 	}
 

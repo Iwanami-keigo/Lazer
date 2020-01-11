@@ -6,6 +6,7 @@ public class Blocktouch : MonoBehaviour {
 
 	float x;
 	float y;
+
 	//動ける範囲のｘとｙ
 	float x_max = 8f;
 	float x_min = -8f;
@@ -69,10 +70,15 @@ public class Blocktouch : MonoBehaviour {
 		}
 		if (Input.touchCount > 0) {
 			Touch[] myTouches = Input.touches;
-		
+			float touch_x;
+			float touch_y;
+
+			touch_x = myTouches [0].position.x;
+			touch_y = myTouches [0].position.y;
+
 			for (int i = 0; i < myTouches.Length; i++) {
 				if (i == 0) {
-					transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (x, y, 10.0f));
+					transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (touch_x, touch_y, 10.0f));
 				}
 			}
 

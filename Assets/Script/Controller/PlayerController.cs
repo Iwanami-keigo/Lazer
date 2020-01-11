@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour {
 	private GameObject stick;
 	public GameObject homePanel;
 
+	private Vector3 playerposition;
+	public bool ismove;
 	// Use this for initialization
 	void Start () {
 		
@@ -30,7 +32,13 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Vector3.Distance (transform.position, playerposition) >= 0.001f) {
+			ismove = true;
+			playerposition = transform.position;
+		} else {
+			ismove = false;
+		}
+
 		//動ける範囲の制限
 		Vector3 PlayerPosition = transform.position;
 		PlayerPosition.x = Mathf.Clamp (transform.position.x, x_min, x_max);

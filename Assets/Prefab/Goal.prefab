@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0aa26b0b2e176940b0d1aa566482824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 0}
+  panel: {fileID: 1195582574420474, guid: c73dde716eb5d5440b1e74a46afad434, type: 2}
   goalse: {fileID: 8300000, guid: a59b21d50d5b6f549b520940663154ef, type: 3}
 --- !u!198 &198140822567573074
 ParticleSystem:
