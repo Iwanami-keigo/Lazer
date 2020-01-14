@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &45115865 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1020888779152332, guid: 172741de9ab88534b8036e972d8f5066,
+    type: 2}
+  m_PrefabInternal: {fileID: 740265030}
 --- !u!1001 &63216001
 Prefab:
   m_ObjectHideFlags: 0
@@ -173,6 +178,26 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.11
       objectReference: {fileID: 0}
+    - target: {fileID: 114092391726336950, guid: b1234f56dac91444ea2b2d9f5bc2f888,
+        type: 2}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1621912578}
+    - target: {fileID: 114092391726336950, guid: b1234f56dac91444ea2b2d9f5bc2f888,
+        type: 2}
+      propertyPath: homeback
+      value: 
+      objectReference: {fileID: 45115865}
+    - target: {fileID: 114092391726336950, guid: b1234f56dac91444ea2b2d9f5bc2f888,
+        type: 2}
+      propertyPath: retry
+      value: 
+      objectReference: {fileID: 726681345}
+    - target: {fileID: 114092391726336950, guid: b1234f56dac91444ea2b2d9f5bc2f888,
+        type: 2}
+      propertyPath: hint
+      value: 
+      objectReference: {fileID: 1798053369}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1234f56dac91444ea2b2d9f5bc2f888, type: 2}
   m_IsPrefabParent: 0
@@ -238,6 +263,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &726681345 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1499416948372318, guid: 172741de9ab88534b8036e972d8f5066,
+    type: 2}
+  m_PrefabInternal: {fileID: 740265030}
 --- !u!1001 &740265030
 Prefab:
   m_ObjectHideFlags: 0
@@ -461,6 +491,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1656822511798178, guid: 172741de9ab88534b8036e972d8f5066,
     type: 2}
   m_PrefabInternal: {fileID: 740265030}
+--- !u!1 &1621912578 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1969242040484700, guid: 172741de9ab88534b8036e972d8f5066,
+    type: 2}
+  m_PrefabInternal: {fileID: 740265030}
 --- !u!1001 &1650435769
 Prefab:
   m_ObjectHideFlags: 0
@@ -608,3 +643,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a77aefb282b24849bd2753dfc622e6c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1798053369 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1640240479205512, guid: 172741de9ab88534b8036e972d8f5066,
+    type: 2}
+  m_PrefabInternal: {fileID: 740265030}

@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448ecb470a7ae0140a48458e64f1e3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Zrote: 0
   theTime: 3
 --- !u!114 &114716305789689240
 MonoBehaviour:
@@ -95,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b66ee6de54bb53a42bbbd83060d3a415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {x: 0, y: 0, z: 0}
+  startPosition: {x: 17.54, y: 3.1, z: 0}
   direction: {x: 0, y: 0, z: 0}
   distance: 50
   mask:

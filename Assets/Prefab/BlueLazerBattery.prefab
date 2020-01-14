@@ -83,6 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448ecb470a7ae0140a48458e64f1e3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Zrote: 0
   theTime: 6
 --- !u!114 &114938886131812390
 MonoBehaviour:

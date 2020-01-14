@@ -6,7 +6,7 @@ public class StickPlayerMove : MonoBehaviour {
 	private GameObject player;
 	//移動速度
 	public float attach;
-	private float speed = 0.07f;
+	private float speed = 0.05f;
 	private RectTransform recttrans;
 	private GameObject goal;
 

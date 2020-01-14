@@ -19,7 +19,7 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] private RectTransform CenterReference;
 
     //Privates
-    private Vector3 DeathArea;
+	private Vector3 DeathArea;
     private Vector3 currentVelocity;
     private bool isFree = false;
     private int lastId = -2;
@@ -232,4 +232,8 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             return (StickRect.position.y - DeathArea.y) / Radio;
         }
     }
+	public void Updatedeatharea(){
+		DeathArea = CenterReference.position;
+	}
+		
 }
