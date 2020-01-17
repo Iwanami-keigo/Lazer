@@ -234,6 +234,10 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     }
 	public void Updatedeatharea(){
 		DeathArea = CenterReference.position;
+		Debug.Log (CenterReference.position);
+
+		Start ();
+
 	}
 		
 }

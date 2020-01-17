@@ -113,18 +113,40 @@ public class ButtonMove : MonoBehaviour {
 				SceneManager.LoadScene ("Stage2");
 			} else if (SceneManager.GetActiveScene ().name == "Stage2") {
 				SceneManager.LoadScene ("Stage3");
-			}else if (SceneManager.GetActiveScene ().name == "Stage3") {
+			} else if (SceneManager.GetActiveScene ().name == "Stage3") {
 				SceneManager.LoadScene ("Stage4");
-			}else if (SceneManager.GetActiveScene ().name == "Stage4") {
+			} else if (SceneManager.GetActiveScene ().name == "Stage4") {
 				SceneManager.LoadScene ("Stage5");
-			}else if (SceneManager.GetActiveScene ().name == "Stage5") {
+			} else if (SceneManager.GetActiveScene ().name == "Stage5") {
 				SceneManager.LoadScene ("Stage6");
-			}else if (SceneManager.GetActiveScene ().name == "Stage6") {
+			} else if (SceneManager.GetActiveScene ().name == "Stage6") {
 				SceneManager.LoadScene ("Stage7");
-			}else if (SceneManager.GetActiveScene ().name == "Stage7") {
+			} else if (SceneManager.GetActiveScene ().name == "Stage7") {
 				SceneManager.LoadScene ("Stage8");
-			}else if (SceneManager.GetActiveScene ().name == "Stage8") {
+			} else if (SceneManager.GetActiveScene ().name == "Stage8") {
 				SceneManager.LoadScene ("Stage9");
+			} else if (SceneManager.GetActiveScene ().name == "Stage9") {
+				SceneManager.LoadScene ("Stage10");
+			} else if (SceneManager.GetActiveScene ().name == "Stage10") {
+				SceneManager.LoadScene ("Stage11");
+			}else if (SceneManager.GetActiveScene ().name == "Stage11") {
+				SceneManager.LoadScene ("Stage12");
+			}else if (SceneManager.GetActiveScene ().name == "Stage12") {
+				SceneManager.LoadScene ("Stage13");
+			}else if (SceneManager.GetActiveScene ().name == "Stage13") {
+				SceneManager.LoadScene ("Stage14");
+			}else if (SceneManager.GetActiveScene ().name == "Stage14") {
+				SceneManager.LoadScene ("Stage15");
+			}else if (SceneManager.GetActiveScene ().name == "Stage15") {
+				SceneManager.LoadScene ("Stage16");
+			}else if (SceneManager.GetActiveScene ().name == "Stage16") {
+				SceneManager.LoadScene ("Stage17");
+			}else if (SceneManager.GetActiveScene ().name == "Stage17") {
+				SceneManager.LoadScene ("Stage18");
+			}else if (SceneManager.GetActiveScene ().name == "Stage18") {
+				SceneManager.LoadScene ("Stage19");
+			}else if (SceneManager.GetActiveScene ().name == "Stage19") {
+				SceneManager.LoadScene ("Stage20");
 			}
 		}
 	}

@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour {
 
 	private Vector3 playerposition;
 	public bool ismove;
+
+	bool start = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -69,7 +71,11 @@ public class PlayerController : MonoBehaviour {
 				speed = 0;
 			}
 		}
-
+		if (gameObject.tag == "StartPositionTag") {
+			start = true;
+		} else {
+			start = false;
+		}
 }
 	void OnTriggerStay2D(Collider2D other){
 		//Startエリア内に居る時は開始位置タグ
@@ -77,15 +83,17 @@ public class PlayerController : MonoBehaviour {
 			
 			gameObject.layer = LayerMask.NameToLayer ("Invincible");
 			gameObject.tag = "StartPositionTag";
+
+		}
+		if (other.gameObject.tag == "SafetyTag"  && start == false) {
+			gameObject.layer = LayerMask.NameToLayer("Invincible");
+			gameObject.tag = "InvincibleTag";
 		}
 	}
 	//Safetyエリアに居る時は無敵タグ
 	void OnTriggerEnter2D(Collider2D other){
 		
-		if (other.gameObject.tag == "SafetyTag" ) {
-			gameObject.layer = LayerMask.NameToLayer("Invincible");
-			gameObject.tag = "InvincibleTag";
-		}
+
 		if (other.gameObject.tag == "GoalEnterTag") {
 			gameObject.layer = LayerMask.NameToLayer ("Invincible");
 			gameObject.tag = "PlayerGoalTag";

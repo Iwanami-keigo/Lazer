@@ -29,7 +29,7 @@ public class SafetyController : MonoBehaviour {
 			Retorntouch ();
 
 		}
-		if (Player.gameObject.tag == "PlayerTag") {
+		else  {
 			Dietouch ();
 		}
 	}

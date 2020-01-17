@@ -7,10 +7,10 @@ public class Magnettouch : MonoBehaviour {
 	float x;
 	float y;
 	//動ける範囲のｘとｙ
-	float x_max = 8f;
-	float x_min = -8f;
-	float y_max = 4.9f;
-	float y_min = -4.9f;
+	float x_max = 5.8f;
+	float x_min = -7.8f;
+	float y_max = 4.2f;
+	float y_min = -4.2f;
 	private GameObject Magnet;
 
 	private AudioSource audiosource;
