@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	//移動速度
-	private float speed = 0.07f;
+	private float speed = 0.05f;
 
 	//動ける範囲のｘとｙ
 	float x_max = 8f;
