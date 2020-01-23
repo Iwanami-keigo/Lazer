@@ -60,5 +60,8 @@ public class MenuPlay : MonoBehaviour {
 
 	}
 	}
+	public void Playstart(){
+		this.gameObject.SetActive (false);
+	}
 }
 
