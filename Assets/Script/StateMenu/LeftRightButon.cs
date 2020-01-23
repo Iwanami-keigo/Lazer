@@ -15,11 +15,15 @@ public class LeftRightButon : MonoBehaviour {
 	GameObject stagemenu;
 	StageMenu stagemenuScript;
 	private bool flag = false;
+
+	RectTransform menurect;
+	public float posx;
 	// Use this for initialization
 	void Start () {
 		playbutton = GameObject.Find ("PlayButton");
 		stagemenu = GameObject.Find ("StageMenu");
 		stagemenuScript = stagemenu.GetComponent<StageMenu> ();
+		menurect = stagemenu.GetComponent<RectTransform> ();
 
 	}
 	
@@ -39,9 +43,13 @@ public class LeftRightButon : MonoBehaviour {
 		tweener = this.transform.DOLocalMoveY ( up, time).SetEase (Ease.OutExpo);
 	}
 	public void rightbuttonpush(){
-		stagemenuScript.Moveflag = stagemenuScript.Moveflag + 1;
+		menurect.DOAnchorPos (new Vector2(posx,0), time);
+		posx = posx - stagemenuScript.scrool;
+		Debug.Log (posx);
 	}
 	public void leftbuttonpush(){
-		stagemenuScript.Moveflag = stagemenuScript.Moveflag - 1;
+		menurect.DOAnchorPos(new Vector2 (posx, 0),time);
+		posx = posx + stagemenuScript.scrool;
+		Debug.Log (posx);
 	}
 }

@@ -1441,6 +1441,7 @@ MonoBehaviour:
   down: -305
   up: -145
   time: 0.2
+  posx: 1276
 --- !u!114 &337769165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,7 +1458,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 337769164}
+        - m_Target: {fileID: 852054859}
           m_MethodName: leftbuttonpush
           m_Mode: 1
           m_Arguments:
@@ -3218,10 +3219,10 @@ RectTransform:
   m_Father: {fileID: 2078056585}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2081.7, y: 320}
-  m_SizeDelta: {x: 4962.4, y: 162.4}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 2081.7, y: 86}
+  m_SizeDelta: {x: 4962.4, y: 162.40002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &852054856
 MonoBehaviour:
@@ -3295,7 +3296,7 @@ MonoBehaviour:
   time: 0.2
   Moveflag: 0
   scrool: 805.58997
-  x_pos: 2081.7
+  posx: 2081.7
 --- !u!114 &852054860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6911,6 +6912,7 @@ MonoBehaviour:
   down: -305
   up: -145
   time: 0.2
+  posx: 1276
 --- !u!114 &2075378114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6927,7 +6929,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2075378113}
+        - m_Target: {fileID: 852054859}
           m_MethodName: rightbuttonpush
           m_Mode: 1
           m_Arguments:

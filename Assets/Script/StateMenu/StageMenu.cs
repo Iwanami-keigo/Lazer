@@ -13,14 +13,28 @@ public class StageMenu : MonoBehaviour {
 
 	public int Moveflag = 0;
 
-	public float scrool = 2081.7f - 1276.11f;
-	public float x_pos = 2081.7f;
+	public float scrool = 805.59f;
+	RectTransform menurect;
 
+	public float posx;
+
+	Button Lbtn;
+	Button Rbtn;
+	GameObject leftbtn;
+	GameObject rightbtn;
 
 
 	// Use this for initialization
 	void Start () {
 		playbutton = GameObject.Find ("PlayButton");
+		menurect = GetComponent<RectTransform> ();
+
+		leftbtn = GameObject.Find ("LeftButton");
+		rightbtn = GameObject.Find ("RightButton");
+
+		Lbtn = leftbtn.GetComponent<Button> ();
+		Rbtn = rightbtn.GetComponent<Button> ();
+
 	}
 	
 	// Update is called once per frame
@@ -33,8 +47,17 @@ public class StageMenu : MonoBehaviour {
 		}
 
 		if (Moveflag == 0) {
-			scroolMenu (x_pos);
+			Lbtn.interactable = false;
+		} else {
+			Lbtn.interactable = true;
 		}
+
+		if (Moveflag == 5) {
+			Rbtn.interactable = false;
+		} else {
+			Rbtn.interactable = true;
+		}
+	
 	}
 	void activeposition(){
 		tweener = this.transform.DOLocalMoveY (down, time).SetEase (Ease.OutExpo);
@@ -42,8 +65,21 @@ public class StageMenu : MonoBehaviour {
 	void nonactiveposition(){
 		tweener = this.transform.DOLocalMoveY ( up, time).SetEase (Ease.OutExpo);
 	}
-	void scroolMenu(float nowposition){
-		tweener = this.transform.DOLocalMoveX (nowposition, time).SetEase (Ease.OutExpo);
+	public void rightbuttonpush(){
+		if (Moveflag < 5) {
+			posx = posx - scrool;
+			menurect.DOAnchorPos (new Vector2 (posx, 0), time);
+			Moveflag += 1;
+			Debug.Log (Moveflag);
+		}
+	}
+	public void leftbuttonpush(){
+		if(Moveflag > 0){
+		posx = posx + scrool;
+		menurect.DOAnchorPos(new Vector2 (posx, 0),time);
+			Moveflag -= 1;
+		Debug.Log (posx);
+	}
 
 }
 }
