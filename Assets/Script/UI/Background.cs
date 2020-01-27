@@ -2,18 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class Background : MonoBehaviour {
 	Vector3 mouseworld;
+	GameObject joystick;
+	bl_Joystick joystickscript;
+	GameObject canvas;
+
+	RectTransform canvasrect;
+	RectTransform recttransform;
+
+	Vector2 firstpos;
 	// Use this for initialization
 	void Start () {
-		
+	joystick = GameObject.Find ("Joystick");
+		joystickscript = joystick.GetComponent<bl_Joystick> ();
+		canvas	= GameObject.Find ("Canvas");
+
+		recttransform = joystick.GetComponent<RectTransform> ();
+
+		canvasrect = canvas.GetComponent<RectTransform> ();
+
+		firstpos = recttransform.anchoredPosition;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		mouseworld = Input.mousePosition;
 
+	}
+	public void pointerup(){
+		joystickscript.OnPointerUp (new PointerEventData (EventSystem.current));
+		recttransform.anchoredPosition = firstpos;
 	}
 	public void drag(){
 		if (Input.touchCount > 0) {
@@ -43,22 +64,20 @@ public class Background : MonoBehaviour {
 			Vector3 mouseview = Camera.main.ScreenToViewportPoint (mouseworld);
 			Debug.Log(mouseview);
 		}
+	
+		joystickscript.OnDrag (new PointerEventData (EventSystem.current));
+
+	
+
 	}
 	public void dragstart(){
-		GameObject joystick = GameObject.Find ("Joystick");
-		GameObject canvas = GameObject.Find ("Canvas");
+
+
 	
-		bl_Joystick joystickscript;
 
 
-		RectTransform canvasrect;
-		RectTransform recttransform;
 
-		joystickscript = joystick.GetComponent<bl_Joystick> ();
 
-		recttransform = joystick.GetComponent<RectTransform> ();
-
-		canvasrect = canvas.GetComponent<RectTransform> ();
 
 
 		if (Input.touchCount > 0) {
@@ -74,6 +93,8 @@ public class Background : MonoBehaviour {
 			recttransform.anchoredPosition = ancherpos;
 
 			joystickscript.Updatedeatharea ();
+			joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
+
 		}
 
 		if(Input.GetMouseButton(0)){
@@ -88,6 +109,9 @@ public class Background : MonoBehaviour {
 			recttransform.anchoredPosition = mouseancherpos;
 
 			joystickscript.Updatedeatharea ();
+			joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
+
+
 	}
 
 

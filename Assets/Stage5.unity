@@ -1237,12 +1237,12 @@ Prefab:
     - target: {fileID: 212845641484925332, guid: 8aca8d72eabf64d45886f7fcebd14b1d,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 212922707244778106, guid: 8aca8d72eabf64d45886f7fcebd14b1d,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8aca8d72eabf64d45886f7fcebd14b1d, type: 2}
