@@ -26,17 +26,41 @@ public class StickPlayerMove : MonoBehaviour {
 			cAtch = false;
 		}
 
-		if (pos.x >= 20f && cAtch == true) {
+		if (pos.x < 25f && pos.x >= 15f &&  cAtch == true) {
+			player.transform.Translate (this.speed/2, 0, 0);
+		}	
+		if(pos.x > -25f&& pos.x <= -15f && cAtch == true ){
+			player.transform.Translate (-this.speed/2, 0, 0);
+
+		}
+		if(pos.y < 25f&& pos.y >= 15f&& cAtch == true ){
+			player.transform.Translate (0, this.speed/2, 0);
+		}
+		if (pos.y > -25f &&pos.y <= -15f && cAtch == true) {
+			player.transform.Translate (0, -this.speed, 0);
+		}
+
+
+
+
+
+
+
+
+
+
+
+		if (pos.x >= 25f && cAtch == true) {
 			player.transform.Translate (this.speed, 0, 0);
 		}	
-		if(pos.x <= -20f&& cAtch == true ){
+		if(pos.x <= -25f&& cAtch == true ){
 			player.transform.Translate (-this.speed, 0, 0);
 		
 	}
-		if(pos.y >= 20f&& cAtch == true ){
+		if(pos.y >= 25f&& cAtch == true ){
 			player.transform.Translate (0, this.speed, 0);
 		}
-		if(pos.y <= -20f&& cAtch == true ){
+		if(pos.y <= -25f&& cAtch == true ){
 			player.transform.Translate (0, -this.speed, 0);
 		}
 		if (goal.tag == "GoalEnterTag") {

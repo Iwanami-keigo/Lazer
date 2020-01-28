@@ -83,3 +83,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Stage25.unity
     guid: e1a543a3b4e8738479df64ed1b7784f4
+  - enabled: 1
+    path: Assets/Stage26.unity
+    guid: 89eafa497fd7e5d4bb599b30f6041d4f
+  - enabled: 1
+    path: Assets/Stage27.unity
+    guid: 7fefc3ec7fa16514e9124b842ce77ad1
