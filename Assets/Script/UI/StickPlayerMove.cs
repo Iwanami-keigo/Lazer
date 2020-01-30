@@ -6,7 +6,7 @@ public class StickPlayerMove : MonoBehaviour {
 	private GameObject player;
 	//移動速度
 	public float attach;
-	private float speed = 0.05f;
+	private float speed = 0.04f;
 	private RectTransform recttrans;
 	private GameObject goal;
 
@@ -26,18 +26,18 @@ public class StickPlayerMove : MonoBehaviour {
 			cAtch = false;
 		}
 
-		if (pos.x < 25f && pos.x >= 15f &&  cAtch == true) {
+		if (pos.x < 30f && pos.x >= 15f &&  cAtch == true) {
 			player.transform.Translate (this.speed/2, 0, 0);
 		}	
-		if(pos.x > -25f&& pos.x <= -15f && cAtch == true ){
+		if(pos.x > -30f&& pos.x <= -15f && cAtch == true ){
 			player.transform.Translate (-this.speed/2, 0, 0);
 
 		}
-		if(pos.y < 25f&& pos.y >= 15f&& cAtch == true ){
+		if(pos.y < 30f&& pos.y >= 15f&& cAtch == true ){
 			player.transform.Translate (0, this.speed/2, 0);
 		}
-		if (pos.y > -25f &&pos.y <= -15f && cAtch == true) {
-			player.transform.Translate (0, -this.speed, 0);
+		if (pos.y > -30f &&pos.y <= -15f && cAtch == true) {
+			player.transform.Translate (0, -this.speed/2, 0);
 		}
 
 
@@ -50,17 +50,17 @@ public class StickPlayerMove : MonoBehaviour {
 
 
 
-		if (pos.x >= 25f && cAtch == true) {
+		if (pos.x >= 30f && cAtch == true) {
 			player.transform.Translate (this.speed, 0, 0);
 		}	
-		if(pos.x <= -25f&& cAtch == true ){
+		if(pos.x <= -30f&& cAtch == true ){
 			player.transform.Translate (-this.speed, 0, 0);
 		
 	}
-		if(pos.y >= 25f&& cAtch == true ){
+		if(pos.y >= 30f&& cAtch == true ){
 			player.transform.Translate (0, this.speed, 0);
 		}
-		if(pos.y <= -25f&& cAtch == true ){
+		if(pos.y <= -30f&& cAtch == true ){
 			player.transform.Translate (0, -this.speed, 0);
 		}
 		if (goal.tag == "GoalEnterTag") {
