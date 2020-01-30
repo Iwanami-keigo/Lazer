@@ -31,10 +31,10 @@ public class Lazer : MonoBehaviour {
 
 		if (Input.anyKey) {
 			key = false;
-			Debug.Log (key);
+
 		} else {
 			key = true;
-			Debug.Log (key);
+
 		}
 	
 			startPosition = this.transform.position;

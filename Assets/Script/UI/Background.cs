@@ -95,12 +95,12 @@ public class Background : MonoBehaviour {
 			joystickscript.Updatedeatharea ();
 			joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
 
-		}
+		}else
 
 		if(Input.GetMouseButton(0)){
 
 			Vector3 mouseposition = mouseworld;
-
+		
 
 
 			Vector3 mouseviewpos =  Camera.main.ScreenToViewportPoint (mouseposition);

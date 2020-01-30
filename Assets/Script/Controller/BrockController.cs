@@ -31,8 +31,10 @@ public class BrockController : MonoBehaviour {
 			BlockTouch.tag = "BlocktouchAgo";
 		}
 
-		if (Input.GetKey (KeyCode.Space) && BlockTouch.tag == "BlocktouchNow") {
+		if (Input.GetKey(KeyCode.Space) && BlockTouch.tag == "BlocktouchNow") {
 			this.transform.Rotate (0, 0, z);
+
+			Debug.Log ("AAA");
 		}
 			
 		if (Player.gameObject.tag == "InvincibleTag" || Player.tag == "StartPositionTag") {
