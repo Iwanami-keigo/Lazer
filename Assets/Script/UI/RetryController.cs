@@ -37,11 +37,7 @@ public class RetryController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Player.tag != "StartPositionTag" ) {
-			Upmove ();
-		} else{
-			Downmove ();
-		}
+		
 
 	}
 	void Downmove(){

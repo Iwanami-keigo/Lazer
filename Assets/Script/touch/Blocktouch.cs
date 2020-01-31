@@ -6,10 +6,9 @@ public class Blocktouch : MonoBehaviour {
 
 	float x;
 	float y;
-
 	//動ける範囲のｘとｙ
-	float x_max = 5.8f;
-	float x_min = -7.8f;
+	float x_max = 6.9f;
+	float x_min = -9.2f;
 	float y_max = 4.2f;
 	float y_min = -4.2f;
 	private GameObject Block;

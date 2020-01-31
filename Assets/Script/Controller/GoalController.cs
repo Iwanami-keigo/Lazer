@@ -8,7 +8,7 @@ public class GoalController : MonoBehaviour {
 	private bool isEnd = false;
 	private GameObject GoalText;
 	private ParticleSystem Pt;
-	public GameObject panel;
+	private GameObject panel;
 
 	AudioSource audiosource;
 	public AudioClip goalse;
@@ -17,6 +17,7 @@ public class GoalController : MonoBehaviour {
 	void Start () {
 		this.GoalText = GameObject.Find ("GoalResult");
 		audiosource = GetComponent<AudioSource> ();
+		panel = GameObject.Find ("Panel");
 
 	}
 	

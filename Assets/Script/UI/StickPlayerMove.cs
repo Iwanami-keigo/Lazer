@@ -40,16 +40,6 @@ public class StickPlayerMove : MonoBehaviour {
 			player.transform.Translate (0, -this.speed/2, 0);
 		}
 
-
-
-
-
-
-
-
-
-
-
 		if (pos.x >= 30f && cAtch == true) {
 			player.transform.Translate (this.speed, 0, 0);
 		}	

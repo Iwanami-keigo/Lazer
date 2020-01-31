@@ -10,14 +10,14 @@ public class PlayerController : MonoBehaviour {
 	private float speed = 0.04f;
 
 	//動ける範囲のｘとｙ
-	float x_max = 8f;
-	float x_min = -8f;
+	float x_max = 7.6f;
+	float x_min = -9.9f;
 	float y_max = 4.9f;
 	float y_min = -4.9f;
 
 	private GameObject goal;
 	private GameObject stick;
-	public GameObject homePanel;
+
 
 	private Vector3 playerposition;
 	public bool ismove;
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour {
 
 		PlayerPosition.x += stick.transform.position.x * speed;
 		PlayerPosition.z += stick.transform.position.z * speed;
-		if (!homePanel.activeSelf) {
+
 			//上に移動
 			if (Input.GetKey (KeyCode.UpArrow)) {
 				transform.Translate (0, this.speed, 0);
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour {
 			if (goal.tag == "GoalEnterTag") {
 				speed = 0;
 			}
-		}
+		
 		if (gameObject.tag == "StartPositionTag") {
 			start = true;
 		} else {
