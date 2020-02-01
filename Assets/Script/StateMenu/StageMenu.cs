@@ -13,7 +13,7 @@ public class StageMenu : MonoBehaviour {
 
 	public int Moveflag = 0;
 
-	public float scrool = 805.59f;
+	public float scrool;
 	RectTransform menurect;
 
 	public float posx;
@@ -39,7 +39,7 @@ public class StageMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (Moveflag);
+		
 		if (playbutton.activeSelf) {
 			activeposition ();
 		} else {

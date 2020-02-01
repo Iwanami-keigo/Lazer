@@ -10,6 +10,7 @@ public class TitlePanel : MonoBehaviour {
 	private float alfa = 1f;
 	float red,green,blue;
 	public float speed ;
+	public bool panelon = false;
 
 	// Use this for initialization
 	void Start () {
@@ -22,13 +23,16 @@ public class TitlePanel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GetComponent<Image> ().color = new Color (red,green,blue, alfa);
-		if(SceneManager.GetActiveScene().name == "Menu"){
+		if(panelon == false){
 
 			alfa -= speed;
 			if(alfa <= 0.001f){
 				this.gameObject.SetActive (false);
 			}
-		}
+		}else{
+			alfa += speed;
+
 
 	}
+}
 }

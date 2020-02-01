@@ -20,8 +20,8 @@ public class ButtonMove : MonoBehaviour {
 
 
 
-	public GameObject back;
-	public GameObject next;
+    GameObject back;
+    GameObject next;
 	public float speed = 0.02f;
 	Color color;
 
@@ -35,28 +35,29 @@ public class ButtonMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		goal = GameObject.Find ("Goal");
-
+		back = GameObject.Find ("BackButton");
+		next = GameObject.Find ("NextButton");
 		//バック親
-		backred = GetComponent<Image> ().color.r;
-		backgreen= GetComponent<Image> ().color.g;
-		backblue = GetComponent<Image> ().color.b;
-		backalfa = GetComponent<Image> ().color.a;
+		backred = back.GetComponent<Image> ().color.r;
+		backgreen= back.GetComponent<Image> ().color.g;
+		backblue = back.GetComponent<Image> ().color.b;
+		backalfa = back.GetComponent<Image> ().color.a;
 		//ネクスト親
-		nextred = GetComponent<Image> ().color.r;
-		nextgreen = GetComponent<Image> ().color.g;
-		nextblue = GetComponent<Image> ().color.b;
-		nextalfa = GetComponent<Image> ().color.a;
+		nextred = next.GetComponent<Image> ().color.r;
+		nextgreen = next.GetComponent<Image> ().color.g;
+		nextblue = next.GetComponent<Image> ().color.b;
+		nextalfa = next.GetComponent<Image> ().color.a;
 
 		//バック子
-		backred2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.r;
-		backgreen2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.g;
-		backblue2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.b;
-		backalfa2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.a;
+		backred2 = back.transform.GetChild(0).gameObject.GetComponent<Text> ().color.r;
+		backgreen2 = back.transform.GetChild(0).gameObject.GetComponent<Text> ().color.g;
+		backblue2 = back.transform.GetChild(0).gameObject.GetComponent<Text> ().color.b;
+		backalfa2 = back.transform.GetChild(0).gameObject.GetComponent<Text> ().color.a;
 		//ネクスト子
-		nextred2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.r;
-		nextgreen2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.g;
-		nextblue2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.b;
-		nextalfa2 = transform.GetChild(0).gameObject.GetComponent<Text> ().color.a;
+		nextred2 = next.transform.GetChild(0).gameObject.GetComponent<Text> ().color.r;
+		nextgreen2 = next.transform.GetChild(0).gameObject.GetComponent<Text> ().color.g;
+		nextblue2 = next.transform.GetChild(0).gameObject.GetComponent<Text> ().color.b;
+		nextalfa2 = next.transform.GetChild(0).gameObject.GetComponent<Text> ().color.a;
 
 		audiosource = GetComponent<AudioSource> ();
 	}
