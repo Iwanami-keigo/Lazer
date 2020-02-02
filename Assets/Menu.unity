@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 84754416}
   - component: {fileID: 84754415}
   - component: {fileID: 84754418}
+  - component: {fileID: 84754419}
   m_Layer: 5
   m_Name: Stage7
   m_TagString: Untagged
@@ -310,6 +311,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 7
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &84754419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84754413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 84754418}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &89316718
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 5
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
 --- !u!114 &89316724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,6 +754,7 @@ GameObject:
   - component: {fileID: 139936724}
   - component: {fileID: 139936723}
   - component: {fileID: 139936726}
+  - component: {fileID: 139936727}
   m_Layer: 5
   m_Name: Stage12
   m_TagString: Untagged
@@ -826,6 +866,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 12
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &139936727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 139936721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 139936726}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &188734794
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +912,7 @@ GameObject:
   - component: {fileID: 188734797}
   - component: {fileID: 188734796}
   - component: {fileID: 188734799}
+  - component: {fileID: 188734800}
   m_Layer: 5
   m_Name: Stage13
   m_TagString: Untagged
@@ -949,6 +1024,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 13
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &188734800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188734794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 188734799}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &229079254
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,6 +1070,7 @@ GameObject:
   - component: {fileID: 229079257}
   - component: {fileID: 229079256}
   - component: {fileID: 229079259}
+  - component: {fileID: 229079260}
   m_Layer: 5
   m_Name: Stage11
   m_TagString: Untagged
@@ -1072,6 +1182,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 11
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &229079260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 229079254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 229079259}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &233530983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1228,7 @@ GameObject:
   - component: {fileID: 233530986}
   - component: {fileID: 233530985}
   - component: {fileID: 233530988}
+  - component: {fileID: 233530989}
   m_Layer: 5
   m_Name: Stage21
   m_TagString: Untagged
@@ -1195,6 +1340,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 21
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &233530989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233530983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 233530988}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &240062415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1386,7 @@ GameObject:
   - component: {fileID: 240062418}
   - component: {fileID: 240062417}
   - component: {fileID: 240062420}
+  - component: {fileID: 240062421}
   m_Layer: 5
   m_Name: Stage8
   m_TagString: Untagged
@@ -1318,6 +1498,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 8
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &240062421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 240062415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 240062420}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &270607239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,6 +1544,7 @@ GameObject:
   - component: {fileID: 270607242}
   - component: {fileID: 270607241}
   - component: {fileID: 270607244}
+  - component: {fileID: 270607245}
   m_Layer: 5
   m_Name: Stage26
   m_TagString: Untagged
@@ -1441,6 +1656,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 26
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &270607245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 270607239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 270607244}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &337769159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,7 +1722,7 @@ RectTransform:
   m_Children:
   - {fileID: 1270316323}
   m_Father: {fileID: 2078056585}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1907,6 +2156,7 @@ GameObject:
   - component: {fileID: 386306039}
   - component: {fileID: 386306038}
   - component: {fileID: 386306041}
+  - component: {fileID: 386306042}
   m_Layer: 5
   m_Name: Stage10
   m_TagString: Untagged
@@ -2018,6 +2268,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 10
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &386306042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 386306036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 386306041}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &436386188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,7 +2393,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -2172,6 +2456,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 1
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
 --- !u!1 &446080419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,6 +2534,7 @@ GameObject:
   - component: {fileID: 458348125}
   - component: {fileID: 458348124}
   - component: {fileID: 458348127}
+  - component: {fileID: 458348128}
   m_Layer: 5
   m_Name: Stage27
   m_TagString: Untagged
@@ -2357,6 +2646,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 27
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &458348128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 458348122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 458348127}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1001 &484070887
 Prefab:
   m_ObjectHideFlags: 0
@@ -2659,6 +2982,7 @@ GameObject:
   - component: {fileID: 574835104}
   - component: {fileID: 574835103}
   - component: {fileID: 574835106}
+  - component: {fileID: 574835107}
   m_Layer: 5
   m_Name: Stage15
   m_TagString: Untagged
@@ -2770,6 +3094,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 15
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &574835107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574835101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 574835106}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &598045936
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,6 +3362,7 @@ GameObject:
   - component: {fileID: 697745222}
   - component: {fileID: 697745221}
   - component: {fileID: 697745224}
+  - component: {fileID: 697745225}
   m_Layer: 5
   m_Name: Stage14
   m_TagString: Untagged
@@ -3115,6 +3474,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 14
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &697745225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697745219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 697745224}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &749674150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,6 +3668,7 @@ GameObject:
   - component: {fileID: 788700861}
   - component: {fileID: 788700860}
   - component: {fileID: 788700863}
+  - component: {fileID: 788700864}
   m_Layer: 5
   m_Name: Stage25
   m_TagString: Untagged
@@ -3386,6 +3780,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 25
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &788700864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 788700858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 788700863}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &852054854
 GameObject:
   m_ObjectHideFlags: 0
@@ -3447,7 +3875,7 @@ RectTransform:
   - {fileID: 1518731973}
   - {fileID: 1363747427}
   m_Father: {fileID: 2078056585}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3775,6 +4203,7 @@ GameObject:
   - component: {fileID: 970228075}
   - component: {fileID: 970228074}
   - component: {fileID: 970228077}
+  - component: {fileID: 970228078}
   m_Layer: 5
   m_Name: Stage20
   m_TagString: Untagged
@@ -3886,6 +4315,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 20
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &970228078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970228072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 970228077}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &980712616
 GameObject:
   m_ObjectHideFlags: 0
@@ -4046,6 +4509,7 @@ GameObject:
   - component: {fileID: 1021638199}
   - component: {fileID: 1021638198}
   - component: {fileID: 1021638201}
+  - component: {fileID: 1021638202}
   m_Layer: 5
   m_Name: Stage19
   m_TagString: Untagged
@@ -4157,6 +4621,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 19
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1021638202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1021638196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1021638201}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1023747349 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1954353536355032, guid: a7df597e831520f439eb089cceb19c20,
@@ -4339,6 +4837,7 @@ GameObject:
   - component: {fileID: 1154661307}
   - component: {fileID: 1154661306}
   - component: {fileID: 1154661309}
+  - component: {fileID: 1154661310}
   m_Layer: 5
   m_Name: Stage17
   m_TagString: Untagged
@@ -4450,6 +4949,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 17
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1154661310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154661304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1154661309}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1227019483
 GameObject:
   m_ObjectHideFlags: 0
@@ -4462,6 +4995,7 @@ GameObject:
   - component: {fileID: 1227019486}
   - component: {fileID: 1227019485}
   - component: {fileID: 1227019488}
+  - component: {fileID: 1227019489}
   m_Layer: 5
   m_Name: Stage16
   m_TagString: Untagged
@@ -4573,6 +5107,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 16
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1227019489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227019483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1227019488}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1239026093
 GameObject:
   m_ObjectHideFlags: 0
@@ -4585,6 +5153,7 @@ GameObject:
   - component: {fileID: 1239026096}
   - component: {fileID: 1239026095}
   - component: {fileID: 1239026098}
+  - component: {fileID: 1239026099}
   m_Layer: 5
   m_Name: Stage24
   m_TagString: Untagged
@@ -4696,6 +5265,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 24
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1239026099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239026093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1239026098}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1248334180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4944,7 +5547,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2078056585}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5035,11 +5638,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1306666236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.78125, y: 0.78125, z: 0.78125}
+  m_LocalPosition: {x: 1080, y: 540, z: 0}
+  m_LocalScale: {x: 1.0546875, y: 1.0546875, z: 1.0546875}
   m_Children: []
-  m_Father: {fileID: 2078056585}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1350448446
 GameObject:
@@ -5201,6 +5804,7 @@ GameObject:
   - component: {fileID: 1363747429}
   - component: {fileID: 1363747428}
   - component: {fileID: 1363747431}
+  - component: {fileID: 1363747432}
   m_Layer: 5
   m_Name: Stage30
   m_TagString: Untagged
@@ -5312,6 +5916,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 30
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1363747432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1363747426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1363747431}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1399254757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5324,6 +5962,7 @@ GameObject:
   - component: {fileID: 1399254760}
   - component: {fileID: 1399254759}
   - component: {fileID: 1399254762}
+  - component: {fileID: 1399254763}
   m_Layer: 5
   m_Name: Stage22
   m_TagString: Untagged
@@ -5435,6 +6074,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 22
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1399254763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1399254757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1399254762}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1427451412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5589,6 +6262,7 @@ GameObject:
   - component: {fileID: 1461084114}
   - component: {fileID: 1461084113}
   - component: {fileID: 1461084116}
+  - component: {fileID: 1461084117}
   m_Layer: 5
   m_Name: Stage18
   m_TagString: Untagged
@@ -5700,6 +6374,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 18
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1461084117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1461084111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1461084116}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1495515648
 GameObject:
   m_ObjectHideFlags: 0
@@ -5786,6 +6494,7 @@ GameObject:
   - component: {fileID: 1518731975}
   - component: {fileID: 1518731974}
   - component: {fileID: 1518731977}
+  - component: {fileID: 1518731978}
   m_Layer: 5
   m_Name: Stage29
   m_TagString: Untagged
@@ -5897,6 +6606,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 29
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1518731978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518731972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1518731977}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1560160795
 GameObject:
   m_ObjectHideFlags: 0
@@ -6099,6 +6842,7 @@ GameObject:
   - component: {fileID: 1626306286}
   - component: {fileID: 1626306285}
   - component: {fileID: 1626306288}
+  - component: {fileID: 1626306289}
   m_Layer: 5
   m_Name: Stage9
   m_TagString: Untagged
@@ -6210,6 +6954,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 9
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1626306289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1626306283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1626306288}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1663886487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6222,6 +7000,7 @@ GameObject:
   - component: {fileID: 1663886490}
   - component: {fileID: 1663886489}
   - component: {fileID: 1663886492}
+  - component: {fileID: 1663886493}
   m_Layer: 5
   m_Name: Stage28
   m_TagString: Untagged
@@ -6333,6 +7112,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 28
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1663886493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1663886487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1663886492}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1695286280
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,6 +7300,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 3
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
 --- !u!1 &1797843601 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1954353536355032, guid: a7df597e831520f439eb089cceb19c20,
@@ -6521,6 +7338,7 @@ GameObject:
   - component: {fileID: 1805520623}
   - component: {fileID: 1805520622}
   - component: {fileID: 1805520625}
+  - component: {fileID: 1805520626}
   m_Layer: 5
   m_Name: Stage23
   m_TagString: Untagged
@@ -6632,6 +7450,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 23
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1805520626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1805520620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1805520625}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1001 &1848938164
 Prefab:
   m_ObjectHideFlags: 0
@@ -6809,6 +7661,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 4
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
 --- !u!114 &1880493375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6999,6 +7855,7 @@ GameObject:
   - component: {fileID: 1950184932}
   - component: {fileID: 1950184931}
   - component: {fileID: 1950184934}
+  - component: {fileID: 1950184935}
   m_Layer: 5
   m_Name: Stage6
   m_TagString: Untagged
@@ -7110,6 +7967,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 6
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}
+--- !u!114 &1950184935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1950184929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1950184934}
+          m_MethodName: stagepush
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1984772445
 GameObject:
   m_ObjectHideFlags: 0
@@ -7290,7 +8181,7 @@ RectTransform:
   m_Children:
   - {fileID: 1427451413}
   m_Father: {fileID: 2078056585}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7508,7 +8399,6 @@ RectTransform:
   m_Children:
   - {fileID: 1495515649}
   - {fileID: 491659495}
-  - {fileID: 1306666237}
   - {fileID: 852054855}
   - {fileID: 337769160}
   - {fileID: 2075378109}
@@ -7823,3 +8713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e197c9b1fd2c48b7d3702dd4139c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage_num: 0
+  stage_flagnumber: 2
+  startmaterial: {fileID: 2100000, guid: ef157848d271ae641a615074f17fcf6d, type: 2}
+  goalmaterial: {fileID: 2100000, guid: af8f9177d3e8dfd45a2512522ad2b565, type: 2}

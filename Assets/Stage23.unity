@@ -2687,7 +2687,7 @@ Prefab:
     - target: {fileID: 114838306642279422, guid: a7df597e831520f439eb089cceb19c20,
         type: 2}
       propertyPath: mask.m_Bits
-      value: 4294959817
+      value: 4294959816
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a7df597e831520f439eb089cceb19c20, type: 2}

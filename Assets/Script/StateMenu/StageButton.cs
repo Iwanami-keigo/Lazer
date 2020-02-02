@@ -9,16 +9,44 @@ public class StageButton : MonoBehaviour {
 	private string stagename;
 	private GameObject panel;
 	TitlePanel titlepanel;
+
+	public int stage_num;
+	public int stage_flagnumber;
+	Image image;
+	Button button;
+
+	public Material startmaterial;
+	public Material goalmaterial;
+
+	private string clearon;
 	// Use this for initialization
 	void Start () {
 		stagename = this.gameObject.name;
 		panel = GameObject.Find ("StartPanel");
 		titlepanel = panel.GetComponent<TitlePanel> ();
+
+		stage_num = PlayerPrefs.GetInt ("STAGE", 1);
+		clearon = PlayerPrefs.GetString (stagename,"");
+		image = GetComponent<Image> ();
+		button = GetComponent<Button> ();
+		Debug.Log (clearon);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (stage_num >= stage_flagnumber) {
+
+			image.raycastTarget = true;
+			button.interactable = true;
+		}
+		if (stage_flagnumber <= stage_num) {
+			if (clearon == "CLEAR") {
+				image.material = goalmaterial;
+			} else {
+				image.material = startmaterial;
+
+			}
+		}
 	}
 
 
