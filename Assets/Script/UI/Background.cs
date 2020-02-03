@@ -14,6 +14,7 @@ public class Background : MonoBehaviour {
 	RectTransform recttransform;
 
 	Vector2 firstpos;
+	public bool itemcatch = false;
 	// Use this for initialization
 	void Start () {
 	joystick = GameObject.Find ("Joystick");
@@ -37,41 +38,42 @@ public class Background : MonoBehaviour {
 		recttransform.anchoredPosition = firstpos;
 	}
 	public void drag(){
-		if (Input.touchCount > 0) {
+		if (itemcatch == false) {
+			if (Input.touchCount > 0) {
 			
-			Touch[] myTouches = Input.touches;
+				Touch[] myTouches = Input.touches;
 		
 
-			Vector3 screenpos = myTouches [0].position;
+				Vector3 screenpos = myTouches [0].position;
 
 
 
-			Vector3 worldpos = Camera.main.ScreenToWorldPoint (screenpos);
-			Vector3 viewpos = Camera.main.ScreenToViewportPoint (screenpos);
-			for (int i = 0; i < myTouches.Length; i++) {
-				if (i >= 0) {
-					Debug.Log (viewpos);
+				Vector3 worldpos = Camera.main.ScreenToWorldPoint (screenpos);
+				Vector3 viewpos = Camera.main.ScreenToViewportPoint (screenpos);
+				for (int i = 0; i < myTouches.Length; i++) {
+					if (i >= 0) {
+						Debug.Log (viewpos);
 
+					}
 				}
+
 			}
 
-		}
-
-		if(Input.GetMouseButton(0)){
+			if (Input.GetMouseButton (0)) {
 			
-			Vector3 mouseworldpos = Camera.main.ScreenToWorldPoint (mouseworld);
+				Vector3 mouseworldpos = Camera.main.ScreenToWorldPoint (mouseworld);
 
-			Vector3 mouseview = Camera.main.ScreenToViewportPoint (mouseworld);
-			Debug.Log(mouseview);
+				Vector3 mouseview = Camera.main.ScreenToViewportPoint (mouseworld);
+				Debug.Log (mouseview);
+			}
+	
+			joystickscript.OnDrag (new PointerEventData (EventSystem.current));
+
+	
 		}
-	
-		joystickscript.OnDrag (new PointerEventData (EventSystem.current));
-
-	
-
 	}
 	public void dragstart(){
-
+		if (itemcatch == false) {
 
 	
 
@@ -80,41 +82,39 @@ public class Background : MonoBehaviour {
 
 
 
-		if (Input.touchCount > 0) {
-			Touch[] myTouches = Input.touches;
+			if (Input.touchCount > 0) {
+				Touch[] myTouches = Input.touches;
 
-			Vector3 touchposition = myTouches [0].position;
+				Vector3 touchposition = myTouches [0].position;
 
 
 
-			Vector3 viewportpos = Camera.main.ScreenToViewportPoint (touchposition);
+				Vector3 viewportpos = Camera.main.ScreenToViewportPoint (touchposition);
 
-			Vector2 ancherpos = new Vector2 (canvasrect.sizeDelta.x * viewportpos.x, canvasrect.sizeDelta.y * viewportpos.y);
-			recttransform.anchoredPosition = ancherpos;
+				Vector2 ancherpos = new Vector2 (canvasrect.sizeDelta.x * viewportpos.x, canvasrect.sizeDelta.y * viewportpos.y);
+				recttransform.anchoredPosition = ancherpos;
 
-			joystickscript.Updatedeatharea ();
-			joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
+				joystickscript.Updatedeatharea ();
+				joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
 
-		}else
+			} else if (Input.GetMouseButton (0)) {
 
-		if(Input.GetMouseButton(0)){
-
-			Vector3 mouseposition = mouseworld;
+				Vector3 mouseposition = mouseworld;
 		
 
 
-			Vector3 mouseviewpos =  Camera.main.ScreenToViewportPoint (mouseposition);
+				Vector3 mouseviewpos = Camera.main.ScreenToViewportPoint (mouseposition);
 
-			Vector2 mouseancherpos = new Vector2 (canvasrect.sizeDelta.x * mouseviewpos.x, canvasrect.sizeDelta.y * mouseviewpos.y);
-			recttransform.anchoredPosition = mouseancherpos;
+				Vector2 mouseancherpos = new Vector2 (canvasrect.sizeDelta.x * mouseviewpos.x, canvasrect.sizeDelta.y * mouseviewpos.y);
+				recttransform.anchoredPosition = mouseancherpos;
 
-			joystickscript.Updatedeatharea ();
-			joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
-
-
-	}
+				joystickscript.Updatedeatharea ();
+				joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
 
 
+			}
 
+
+		}
 }
 }

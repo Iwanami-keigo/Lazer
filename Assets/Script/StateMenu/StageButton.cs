@@ -19,6 +19,8 @@ public class StageButton : MonoBehaviour {
 	public Material goalmaterial;
 
 	private string clearon;
+	AudioSource audiosource;
+	public AudioClip pushse;
 	// Use this for initialization
 	void Start () {
 		stagename = this.gameObject.name;
@@ -30,6 +32,7 @@ public class StageButton : MonoBehaviour {
 		image = GetComponent<Image> ();
 		button = GetComponent<Button> ();
 		Debug.Log (clearon);
+		audiosource = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -51,6 +54,7 @@ public class StageButton : MonoBehaviour {
 
 
 	public void stagepush(){
+		audiosource.PlayOneShot (pushse);
 		panel.SetActive (true);
 		titlepanel.panelon = true;
 		Invoke ("stagechange", 3);

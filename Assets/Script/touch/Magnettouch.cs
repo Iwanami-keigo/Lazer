@@ -15,11 +15,14 @@ public class Magnettouch : MonoBehaviour {
 
 	private AudioSource audiosource;
 	public AudioClip touchse;
-
+	private GameObject background;
+	Background backgroundscript;
 	// Use this for initialization
 	void Start () {
 		Magnet = GameObject.Find ("Magnet");
 		audiosource = GetComponent<AudioSource> ();
+		background = GameObject.Find ("Background");
+		backgroundscript = background.GetComponent<Background> ();
 	}
 
 	// Update is called once per frame
@@ -60,6 +63,10 @@ public class Magnettouch : MonoBehaviour {
 
 	}
 	public void SE(){
+		backgroundscript.itemcatch = true;
 		audiosource.PlayOneShot (touchse);
+	}
+	public void up(){
+		backgroundscript.itemcatch = false;
 	}
 }

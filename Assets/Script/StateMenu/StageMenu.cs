@@ -22,13 +22,14 @@ public class StageMenu : MonoBehaviour {
 	Button Rbtn;
 	GameObject leftbtn;
 	GameObject rightbtn;
-
+	AudioSource audiosource;
+	public AudioClip pushse;
 
 	// Use this for initialization
 	void Start () {
 		playbutton = GameObject.Find ("PlayButton");
 		menurect = GetComponent<RectTransform> ();
-
+		audiosource = GetComponent<AudioSource> ();
 		leftbtn = GameObject.Find ("LeftButton");
 		rightbtn = GameObject.Find ("RightButton");
 
@@ -70,15 +71,17 @@ public class StageMenu : MonoBehaviour {
 			posx = posx - scrool;
 			menurect.DOAnchorPos (new Vector2 (posx, 0), time);
 			Moveflag += 1;
-			Debug.Log (Moveflag);
+		
+			audiosource.PlayOneShot (pushse);
 		}
 	}
 	public void leftbuttonpush(){
 		if(Moveflag > 0){
+			audiosource.PlayOneShot (pushse);
 		posx = posx + scrool;
 		menurect.DOAnchorPos(new Vector2 (posx, 0),time);
 			Moveflag -= 1;
-		Debug.Log (posx);
+		
 	}
 
 }

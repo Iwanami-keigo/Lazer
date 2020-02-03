@@ -18,13 +18,15 @@ public class LeftRightButon : MonoBehaviour {
 
 	RectTransform menurect;
 	public float posx;
+	AudioSource audiosource;
+	public AudioClip pushse;
 	// Use this for initialization
 	void Start () {
 		playbutton = GameObject.Find ("PlayButton");
 		stagemenu = GameObject.Find ("StageMenu");
 		stagemenuScript = stagemenu.GetComponent<StageMenu> ();
 		menurect = stagemenu.GetComponent<RectTransform> ();
-
+		audiosource = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -46,10 +48,12 @@ public class LeftRightButon : MonoBehaviour {
 		menurect.DOAnchorPos (new Vector2(posx,0), time);
 		posx = posx - stagemenuScript.scrool;
 		Debug.Log (posx);
+		audiosource.PlayOneShot (pushse);
 	}
 	public void leftbuttonpush(){
 		menurect.DOAnchorPos(new Vector2 (posx, 0),time);
 		posx = posx + stagemenuScript.scrool;
 		Debug.Log (posx);
+		audiosource.PlayOneShot (pushse);
 	}
 }

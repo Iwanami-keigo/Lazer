@@ -16,12 +16,15 @@ public class Blocktouch : MonoBehaviour {
 
 	private AudioSource audiosource;
 	public AudioClip touchse;
+	private GameObject background;
+	Background backgroundscript;
 
 	// Use this for initialization
 	void Start () {
 		Block = GameObject.Find ("Block");
 		audiosource = GetComponent<AudioSource> ();
-
+		background = GameObject.Find ("Background");
+		backgroundscript = background.GetComponent<Background> ();
 	}
 
 	// Update is called once per frame
@@ -61,12 +64,6 @@ public class Blocktouch : MonoBehaviour {
 	//イベントトリガー：ドラッグ
 	public void Idou(){
 		GameObject Player = GameObject.Find ("Player");
-		if (Input.GetMouseButton (0)) {
-			if (Player.tag == "InvincibleTag" || Player.tag == "StartPositionTag") {
-				transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (x, y, 10.0f));
-
-			}
-		}
 		if (Input.touchCount > 0) {
 			Touch[] myTouches = Input.touches;
 			float touch_x;
@@ -81,7 +78,14 @@ public class Blocktouch : MonoBehaviour {
 				}
 			}
 
+		}else
+		if (Input.GetMouseButton (0)) {
+			if (Player.tag == "InvincibleTag" || Player.tag == "StartPositionTag") {
+				transform.position = Camera.main.ScreenToWorldPoint (new Vector3 (x, y, 10.0f));
+
+			}
 		}
+
 		}
 
 
@@ -92,11 +96,15 @@ public class Blocktouch : MonoBehaviour {
 		GameObject Player = GameObject.Find ("Player");
 		if(Player.tag != "PlayerTag"){
 		this.gameObject.tag = "BlocktouchNow";
+			backgroundscript.itemcatch = true;
 	
 	}
 }
 	public void SE(){
 		audiosource.PlayOneShot (touchse);
+	}
+	public void up(){
+		backgroundscript.itemcatch = false;
 	}
 }
 

@@ -14,6 +14,7 @@ public class PanelController : MonoBehaviour {
 	private GameObject next;
 
 	public GameObject Homeback;
+	public bool skipflag = false;
 
 
 	// Use this for initialization
@@ -30,21 +31,26 @@ public class PanelController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GetComponent<Image> ().color = new Color (red,green,blue, alfa);
-		if (goal.tag != "GoalEnterTag" && Homeback.tag != "Buttonnull") {
-			alfa -= speed;
-			if (alfa <= 0.001f) {
-				this.gameObject.SetActive (false);
+		if (skipflag == false) {
+			if (goal.tag != "GoalEnterTag" && Homeback.tag != "Buttonnull") {
+				alfa -= speed;
+				if (alfa <= 0.001f) {
+					this.gameObject.SetActive (false);
+				}
 			}
-		}
 
-		if(goal.tag == "GoalEnterTag"  && alfa <= 0.5f){
+			if (goal.tag == "GoalEnterTag" && alfa <= 0.5f) {
 			
 				alfa += speed;
 
 	
-}
-		if (back.tag == "Buttonnull" || next.tag == "Buttonnull"||Homeback.tag == "Buttonnull") {
+			}
+			if (back.tag == "Buttonnull" || next.tag == "Buttonnull" || Homeback.tag == "Buttonnull") {
+				alfa += speed;
+			}
+		} else {
 			alfa += speed;
 		}
+
 }
 }

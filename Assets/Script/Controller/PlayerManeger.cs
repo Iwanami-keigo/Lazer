@@ -23,6 +23,8 @@ public class PlayerManeger : MonoBehaviour {
 
 	AudioSource audiosource;
 
+	public int deadcount = 0;
+
 
 	// Use this for initialization
 	void Start () {
@@ -58,6 +60,7 @@ public class PlayerManeger : MonoBehaviour {
 		Player.gameObject.tag = "StartPositionTag";
 		Player.transform.position = firstPosition;
 		audiosource.PlayOneShot (respsound);
+		deadcount += 1;
 
 
 	}
