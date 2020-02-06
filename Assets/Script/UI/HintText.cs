@@ -14,17 +14,6 @@ public class HintText : MonoBehaviour {
 	void Start () {
 		hintpaneltext = hintpanel.transform.GetChild (0).transform.GetChild (0).gameObject.GetComponent<Text> ();
 		audiosouce = GetComponent<AudioSource> ();
-
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-	public void hintPush(){
-		hintpanel.SetActive (true);
-		audiosouce.PlayOneShot (pausesound);
 		if (SceneManager.GetActiveScene ().name == "Gamescene") {
 			hintpaneltext.text =
 				"ここにテキストを表示            ここにテキストを表示          ここにテキストを表示";
@@ -49,6 +38,17 @@ public class HintText : MonoBehaviour {
 			hintpaneltext.text = "なし";
 
 		}
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+	public void hintPush(){
+		hintpanel.SetActive (true);
+		audiosouce.PlayOneShot (pausesound);
+
 
 	}
 }

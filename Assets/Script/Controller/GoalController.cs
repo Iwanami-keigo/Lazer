@@ -30,9 +30,7 @@ public class GoalController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (this.gameObject.tag == "GoalEnterTag") {
-			Ptattack ();
-		}
+		
 		
 	}
 	void OnTriggerEnter2D(Collider2D other){
@@ -174,8 +172,6 @@ public class GoalController : MonoBehaviour {
 
 		}
 	}
-	void Ptattack(){
-		
-	}
+
 
 }
