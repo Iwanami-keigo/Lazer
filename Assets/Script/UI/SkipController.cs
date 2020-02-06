@@ -23,7 +23,7 @@ public class SkipController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (manegerscript.deadcount >= 7) {
+		if (PlayerManeger.deadcount >= 7) {
 			GetComponent<RectTransform> ().DOAnchorPosX (-100, time).SetEase (Ease.Linear);
 		}
 		

@@ -30,6 +30,7 @@ public class HomepanelButton : MonoBehaviour {
 		Homepanel.SetActive (false);
 	}
 	private void MenuLoad(){
+		PlayerManeger.deadcount = 0;
 		SceneManager.LoadScene ("Menu");
 	}
 }

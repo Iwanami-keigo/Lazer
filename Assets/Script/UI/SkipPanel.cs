@@ -35,6 +35,7 @@ public class SkipPanel : MonoBehaviour {
 		skippanel.SetActive (false);
 	}
 	void stageskip(){
+		PlayerManeger.deadcount = 0;
 		if (stagename == "Stage1" && clearcomplate <= 1) {
 
 			PlayerPrefs.SetInt ("STAGE", 2);

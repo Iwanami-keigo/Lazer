@@ -38,6 +38,7 @@ public class RetryController : MonoBehaviour {
 	public void ReturnMenu(){
 		homePanel.SetActive (true);
 		audiosouce.PlayOneShot (pausesound);
+	
 	}
 	public void GetRetryButtonDown(){
 		Debug.Log ("Get");

@@ -52,7 +52,7 @@ public class Background : MonoBehaviour {
 				Vector3 viewpos = Camera.main.ScreenToViewportPoint (screenpos);
 				for (int i = 0; i < myTouches.Length; i++) {
 					if (i >= 0) {
-						Debug.Log (viewpos);
+						
 
 					}
 				}
@@ -64,7 +64,7 @@ public class Background : MonoBehaviour {
 				Vector3 mouseworldpos = Camera.main.ScreenToWorldPoint (mouseworld);
 
 				Vector3 mouseview = Camera.main.ScreenToViewportPoint (mouseworld);
-				Debug.Log (mouseview);
+			
 			}
 	
 			joystickscript.OnDrag (new PointerEventData (EventSystem.current));

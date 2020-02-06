@@ -100,9 +100,11 @@ public class ButtonMove : MonoBehaviour {
 			tag = "Buttonnull";
 			GetComponent<RectTransform> ().DOAnchorPosX (rX, time2).SetEase (Ease.InBack);
 			Invoke ("Stagechange", time2 += 2f);
+		
 		}
 	}
 	void Stagechange(){
+		PlayerManeger.deadcount = 0;
 		if (back.tag == "Buttonnull") {
 			
 			SceneManager.LoadScene ("Menu");

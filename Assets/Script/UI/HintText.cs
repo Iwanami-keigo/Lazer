@@ -30,13 +30,13 @@ public class HintText : MonoBehaviour {
 				"ここにテキストを表示            ここにテキストを表示          ここにテキストを表示";
 
 		} else if (SceneManager.GetActiveScene ().name == "Stage1") {
-			hintpaneltext.text = "スタートからゴールまでを目指すゲームです。\n左下のスティックから自機を動かしてゴールに触れてみましょう。";
+			hintpaneltext.text = "スタートからゴールまでを目指すゲームです。\nタップするとスティックが出現するので、自機を動かしてみましょう。";
 		} else if (SceneManager.GetActiveScene ().name == "Stage2") {
 			hintpaneltext.text = "レーザーに当たると自機は消滅しますが、 \nまたスタート地点から復活します。\nゴールできるまで何度もトライしてみましょう。";
 		}else if(SceneManager.GetActiveScene ().name == "Stage3") {
-			hintpaneltext.text = "「ブロック」はレーザーを遮断します。\nタップして置いてみましょう。";
+			hintpaneltext.text = "「ブロック」はレーザーを遮断します。\nドラッグして置いてみましょう。";
 		}else if(SceneManager.GetActiveScene ().name == "Stage4") {
-			hintpaneltext.text = "「ブロック」をタップしたまま別の場所をタップすると、「ブロック」は回転します。";
+			hintpaneltext.text = "「ブロック」を掴んだまま別の場所をタップすると、「ブロック」は回転します。";
 		}else if(SceneManager.GetActiveScene ().name == "Stage5") {
 			hintpaneltext.text = "「マグネット」は自機以外の動いているモノを\n止めることができます。";
 		}else if(SceneManager.GetActiveScene ().name == "Stage7") {

@@ -23,7 +23,7 @@ public class PlayerManeger : MonoBehaviour {
 
 	AudioSource audiosource;
 
-	public int deadcount = 0;
+	public static int deadcount = 0;
 
 
 	// Use this for initialization
@@ -61,6 +61,7 @@ public class PlayerManeger : MonoBehaviour {
 		Player.transform.position = firstPosition;
 		audiosource.PlayOneShot (respsound);
 		deadcount += 1;
+		Debug.Log (deadcount);
 
 
 	}
