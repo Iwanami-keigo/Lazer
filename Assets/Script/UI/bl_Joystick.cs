@@ -119,6 +119,7 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     /// <param name="data"></param>
     public void OnDrag(PointerEventData data)
     {
+        Debug.Log("bljoystickdrag");
         //If this touch id is the first touch in the event
         if (data.pointerId == lastId)
         {
@@ -136,6 +137,7 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 StickRect.position = DeathArea + (position - DeathArea).normalized * radio;
             }
         }
+        Debug.Log("joystickend");
     }
 
     /// <summary>

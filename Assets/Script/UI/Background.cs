@@ -38,41 +38,16 @@ public class Background : MonoBehaviour {
 		recttransform.anchoredPosition = firstpos;
 	}
 	public void drag(){
-		if (itemcatch == false) {
-			if (Input.touchCount > 0) {
-			
-				Touch[] myTouches = Input.touches;
-		
-
-				Vector3 screenpos = myTouches [0].position;
-
-
-
-				Vector3 worldpos = Camera.main.ScreenToWorldPoint (screenpos);
-				Vector3 viewpos = Camera.main.ScreenToViewportPoint (screenpos);
-				for (int i = 0; i < myTouches.Length; i++) {
-					if (i >= 0) {
-						
-
-					}
-				}
-
-			}
-
-			if (Input.GetMouseButton (0)) {
-			
-				Vector3 mouseworldpos = Camera.main.ScreenToWorldPoint (mouseworld);
-
-				Vector3 mouseview = Camera.main.ScreenToViewportPoint (mouseworld);
-			
-			}
+        Debug.Log("backgrounddrag");
 	
 			joystickscript.OnDrag (new PointerEventData (EventSystem.current));
 
 	
-		}
+		
+        Debug.Log("Backend");
 	}
 	public void dragstart(){
+        Debug.Log("dragstarton");
 		if (itemcatch == false) {
 
 	
@@ -81,7 +56,7 @@ public class Background : MonoBehaviour {
 
 
 
-
+        
 			if (Input.touchCount > 0) {
 				Touch[] myTouches = Input.touches;
 
@@ -89,8 +64,8 @@ public class Background : MonoBehaviour {
 
 
 
-				Vector3 viewportpos = Camera.main.ScreenToViewportPoint (touchposition);
-
+			Vector3 viewportpos = Camera.main.ScreenToViewportPoint (touchposition);
+        
 				Vector2 ancherpos = new Vector2 (canvasrect.sizeDelta.x * viewportpos.x, canvasrect.sizeDelta.y * viewportpos.y);
 				recttransform.anchoredPosition = ancherpos;
 
@@ -109,12 +84,13 @@ public class Background : MonoBehaviour {
 				recttransform.anchoredPosition = mouseancherpos;
 
 				joystickscript.Updatedeatharea ();
-				joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
+			   joystickscript.OnPointerDown (new PointerEventData (EventSystem.current));
 
 
 			}
 
 
 		}
+        Debug.Log("dragstartoff");
 }
 }

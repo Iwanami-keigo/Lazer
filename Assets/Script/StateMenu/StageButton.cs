@@ -42,6 +42,7 @@ public class StageButton : MonoBehaviour {
 			image.raycastTarget = true;
 			button.interactable = true;
 		}
+
 		if (stage_flagnumber <= stage_num) {
 			if (clearon == "CLEAR") {
 				image.material = goalmaterial;

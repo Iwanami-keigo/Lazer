@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BarrierController : MonoBehaviour {
 	private GameObject Player;
+    
 	// Use this for initialization
 	void Start () {
 		Player = GameObject.Find ("Player");
