@@ -5181,7 +5181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   down: 617.18
-  up: 303.53
+  up: 243.5
   time: 0.2
   Moveflag: 0
   scrool: 1609.77
