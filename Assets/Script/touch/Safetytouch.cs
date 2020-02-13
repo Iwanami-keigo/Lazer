@@ -21,8 +21,7 @@ public class Safetytouch : MonoBehaviour {
 	void Start () {
 		Safety = GameObject.Find ("SafetyArea");
 		audiosource = GetComponent<AudioSource> ();
-		background = GameObject.Find ("Background");
-		backgroundscript = background.GetComponent<Background> ();
+		
 	}
 
 	// Update is called once per frame
@@ -61,10 +60,10 @@ public class Safetytouch : MonoBehaviour {
 		}
 	}
 	public void SE(){
-		backgroundscript.itemcatch = true;
+		
 		audiosource.PlayOneShot (touchse);
 	}
 	public void up(){
-		backgroundscript.itemcatch = false;
+	
 	}
 }

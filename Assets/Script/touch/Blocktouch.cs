@@ -23,8 +23,7 @@ public class Blocktouch : MonoBehaviour {
 	void Start () {
 		Block = GameObject.Find ("Block");
 		audiosource = GetComponent<AudioSource> ();
-		background = GameObject.Find ("Background");
-		backgroundscript = background.GetComponent<Background> ();
+		
 	}
 
 	// Update is called once per frame
@@ -96,7 +95,7 @@ public class Blocktouch : MonoBehaviour {
 		GameObject Player = GameObject.Find ("Player");
 		if(Player.tag != "PlayerTag"){
 		this.gameObject.tag = "BlocktouchNow";
-			backgroundscript.itemcatch = true;
+			
 	
 	}
 }
@@ -104,7 +103,7 @@ public class Blocktouch : MonoBehaviour {
 		audiosource.PlayOneShot (touchse);
 	}
 	public void up(){
-		backgroundscript.itemcatch = false;
+		
 	}
 }
 

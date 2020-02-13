@@ -206,6 +206,26 @@ GameObject:
   m_PrefabParentObject: {fileID: 1001614857712792, guid: 87478f2e171ff784b942ed04fe1bae96,
     type: 2}
   m_PrefabInternal: {fileID: 2006646621}
+--- !u!223 &703272237
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 703272232}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 114
+  m_TargetDisplay: 0
 --- !u!1 &721668392
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +445,7 @@ Prefab:
     - target: {fileID: 224821050766391500, guid: f7997bb0b12ea8b459e6319f1ddba086,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224821050766391500, guid: f7997bb0b12ea8b459e6319f1ddba086,
         type: 2}
@@ -1057,12 +1077,12 @@ Prefab:
     - target: {fileID: 224798421702430324, guid: 87478f2e171ff784b942ed04fe1bae96,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224853939181890158, guid: 87478f2e171ff784b942ed04fe1bae96,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224040605534568016, guid: 87478f2e171ff784b942ed04fe1bae96,
         type: 2}
@@ -1082,7 +1102,7 @@ Prefab:
     - target: {fileID: 224673198461843456, guid: 87478f2e171ff784b942ed04fe1bae96,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224391453644808274, guid: 87478f2e171ff784b942ed04fe1bae96,
         type: 2}
@@ -1118,6 +1138,21 @@ Prefab:
         type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 223523180191902322, guid: 87478f2e171ff784b942ed04fe1bae96,
+        type: 2}
+      propertyPath: m_OverrideSorting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223523180191902322, guid: 87478f2e171ff784b942ed04fe1bae96,
+        type: 2}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223523180191902322, guid: 87478f2e171ff784b942ed04fe1bae96,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 280
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87478f2e171ff784b942ed04fe1bae96, type: 2}

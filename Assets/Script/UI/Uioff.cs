@@ -63,8 +63,11 @@ public class Uioff : MonoBehaviour
             retry.SetActive(true);
             joystick.SetActive(true);
             home.SetActive(true);
-           
-            skip.SetActive(true);
+           if(nouwstage != "Stage30")
+            {
+                skip.SetActive(true);
+            }
+            
             downflag = false;
             for (int i = 0; i < stages.Length; i++)
             {

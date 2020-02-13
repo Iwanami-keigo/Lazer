@@ -19,7 +19,7 @@ public class HintText : MonoBehaviour {
 				"ここにテキストを表示            ここにテキストを表示          ここにテキストを表示";
 
 		} else if (SceneManager.GetActiveScene ().name == "Stage1") {
-			hintpaneltext.text = "スタートからゴールまでを目指すゲームです。\nタップするとスティックが出現するので、自機を動かしてみましょう。";
+			hintpaneltext.text = "スタートからゴールまでを目指すゲームです。\n左下のスティックから自機を動かしてゴールに触れてみましょう。";
 		} else if (SceneManager.GetActiveScene ().name == "Stage2") {
 			hintpaneltext.text = "レーザーに当たると自機は消滅しますが、 \nまたスタート地点から復活します。\nゴールできるまで何度もトライしてみましょう。";
 		}else if(SceneManager.GetActiveScene ().name == "Stage3") {
