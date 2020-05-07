@@ -171,7 +171,27 @@ public class ButtonMove : MonoBehaviour {
 			} else if (SceneManager.GetActiveScene ().name == "Stage29") {
 				SceneManager.LoadScene ("Stage30");
 			}
-		}
+            else if (SceneManager.GetActiveScene().name == "Stage30")
+            {
+                SceneManager.LoadScene("Stage31");
+            }
+            else if (SceneManager.GetActiveScene().name == "Stage31")
+            {
+                SceneManager.LoadScene("Stage32");
+            }
+            else if (SceneManager.GetActiveScene().name == "Stage32")
+            {
+                SceneManager.LoadScene("Stage33");
+            }
+            else if (SceneManager.GetActiveScene().name == "Stage33")
+            {
+                SceneManager.LoadScene("Stage34");
+            }
+            else if (SceneManager.GetActiveScene().name == "Stage34")
+            {
+                SceneManager.LoadScene("Stage35");
+            }
+        }
 	}
 
 	public void Bseflag(){

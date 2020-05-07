@@ -34,7 +34,12 @@ public class HintText : MonoBehaviour {
 			hintpaneltext.text = "「セーフティエリア」内では、アイテムの再配置ができます。\n「ブロック」を二回置いてみましょう。";
 		}else if(SceneManager.GetActiveScene ().name == "Stage9") {
 			hintpaneltext.text = "赤いレーザーは静止すると当たりません。\n青いレーザーは動いている間は当たりません。\n信号機をイメージしましょう。";
-		}else{
+		}else if(SceneManager.GetActiveScene().name == "Stage31") {
+            hintpaneltext.text = "黄色いレーザーは一度だけ通り抜ける事ができます。通り抜ける事で発動するギミックがある場合があります。";
+
+        }
+        else
+        {
 			hintpaneltext.text = "なし";
 
 		}

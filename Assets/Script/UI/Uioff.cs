@@ -27,9 +27,9 @@ public class Uioff : MonoBehaviour
         retry = GameObject.Find("Retry");
         joystick = GameObject.Find("Joystick");
         home = GameObject.Find("Homeback");
-        buttonimage = transform.FindChild("Button").gameObject;
+        buttonimage = transform.Find("Button").gameObject;
         image = buttonimage.GetComponent<Image>();
-        stages = new string[] { "Stage1", "Stage2", "Stage3", "Stage4", "Stage5",  "Stage7", "Stage8", "Stage9" };
+        stages = new string[] { "Stage1", "Stage2", "Stage3", "Stage4", "Stage5",  "Stage7", "Stage8", "Stage9" ,"Stage31"};
 
         nouwstage = SceneManager.GetActiveScene().name;
     }

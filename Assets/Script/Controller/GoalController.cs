@@ -162,8 +162,27 @@ public class GoalController : MonoBehaviour {
 			if (stagename == "Stage30" && clearcomplate <= 30) {
 				PlayerPrefs.SetInt ("STAGE", 31);
 			}
-
-			PlayerPrefs.SetString (stagename, "CLEAR");
+            if (stagename == "Stage31" && clearcomplate <= 31)
+            {
+                PlayerPrefs.SetInt("STAGE", 32);
+            }
+            if (stagename == "Stage32" && clearcomplate <= 32)
+            {
+                PlayerPrefs.SetInt("STAGE", 33);
+            }
+            if (stagename == "Stage33" && clearcomplate <= 33)
+            {
+                PlayerPrefs.SetInt("STAGE", 34);
+            }
+            if (stagename == "Stage34" && clearcomplate <= 34)
+            {
+                PlayerPrefs.SetInt("STAGE", 35);
+            }
+            if (stagename == "Stage35" && clearcomplate <= 35)
+            {
+                PlayerPrefs.SetInt("STAGE", 36);
+            }
+            PlayerPrefs.SetString (stagename, "CLEAR");
 			Debug.Log ("CLEAR");
 			PlayerPrefs.Save ();
 

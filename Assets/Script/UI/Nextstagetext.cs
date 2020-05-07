@@ -8,10 +8,17 @@ public class Nextstagetext : MonoBehaviour {
 
 	Text mytext;
 	public string stagename;
+    string stagenum;
+
 	// Use this for initialization
 	void Start () {
 		this.mytext = GetComponent<Text> ();
 		stagename = SceneManager.GetActiveScene ().name;
+        stagenum = stagename.Replace("Stage", "");
+
+        int stageint = int.Parse(stagenum);
+       
+        Debug.Log(stageint + 1);
 		if (SceneManager.GetActiveScene ().name == "Stage1") {
 			mytext.text = "Stage2→";
 		} else if (SceneManager.GetActiveScene ().name == "Stage2") {
@@ -70,9 +77,30 @@ public class Nextstagetext : MonoBehaviour {
 			mytext.text = "Stage29→";
 		} else if (SceneManager.GetActiveScene ().name == "Stage29") {
 			mytext.text = "Stage30→";
-		}
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage30")
+        {
+            mytext.text = "Stage31→";
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage31")
+        {
+            mytext.text = "Stage32→";
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage32")
+        {
+            mytext.text = "Stage33→";
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage33")
+        {
+            mytext.text = "Stage34→";
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage34")
+        {
+            mytext.text = "Stage35→";
+        }
+        
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {

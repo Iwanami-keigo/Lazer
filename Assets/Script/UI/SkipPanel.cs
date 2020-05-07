@@ -156,7 +156,29 @@ public class SkipPanel : MonoBehaviour {
 		if (stagename == "Stage30" && clearcomplate <= 30) {
 			PlayerPrefs.SetInt ("STAGE", 31);
 		}
-		if (SceneManager.GetActiveScene ().name == "Gamescene") {
+
+        if (stagename == "Stage31" && clearcomplate <= 31)
+        {
+            PlayerPrefs.SetInt("STAGE", 31);
+        }
+        if (stagename == "Stage32" && clearcomplate <= 32)
+        {
+            PlayerPrefs.SetInt("STAGE", 32);
+        }
+        if (stagename == "Stage33" && clearcomplate <= 33)
+        {
+            PlayerPrefs.SetInt("STAGE", 33);
+        }
+        if (stagename == "Stage34" && clearcomplate <= 34)
+        {
+            PlayerPrefs.SetInt("STAGE", 34);
+        }
+        if (stagename == "Stage35" && clearcomplate <= 35)
+        {
+            PlayerPrefs.SetInt("STAGE", 35);
+        }
+      
+        if (SceneManager.GetActiveScene ().name == "Gamescene") {
 			SceneManager.LoadScene ("Stage1");
 		} else if (SceneManager.GetActiveScene ().name == "Stage1") {
 			SceneManager.LoadScene ("Stage2");
@@ -216,6 +238,27 @@ public class SkipPanel : MonoBehaviour {
 			SceneManager.LoadScene ("Stage29");
 		} else if (SceneManager.GetActiveScene ().name == "Stage29") {
 			SceneManager.LoadScene ("Stage30");
-		}
-	}
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage30")
+        {
+            SceneManager.LoadScene("Stage31");
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage31")
+        {
+            SceneManager.LoadScene("Stage32");
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage32")
+        {
+            SceneManager.LoadScene("Stage33");
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage33")
+        {
+            SceneManager.LoadScene("Stage34");
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage34")
+        {
+            SceneManager.LoadScene("Stage35");
+        }
+       
+    }
 }
